@@ -11,6 +11,8 @@ import UIKit
 class DViewController: UIViewController {
     var question = 0;
     var answerReportD = [Int]()
+    var lastIndex = 0;
+
 
     let questionsD = ["Residents have economic stability", "Children in this community attend school", "Residents can obtain loans on fair terms", "Residents have enough food throughout the year", "Residents have adequate housing", "Residents have access to essential health care"]
 
@@ -33,6 +35,7 @@ class DViewController: UIViewController {
     }
     @IBAction func enterPressedD(_ sender: Any) {
         if(question < questionsD.count-1) {
+            answerReportD[lastIndex+question] = segControlD.selectedSegmentIndex
             question += 1
             questionD.text = questionsD[question]
         }
@@ -45,6 +48,8 @@ class DViewController: UIViewController {
         if segue.identifier == "DtoE"  {
             let eviewc = segue.destination as! EViewController
             eviewc.answerReportE = answerReportD
+            eviewc.lastIndex = question;
+
         }
     }
 

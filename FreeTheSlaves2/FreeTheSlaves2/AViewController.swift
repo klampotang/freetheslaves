@@ -49,6 +49,7 @@ class AViewController: UIViewController {
         if segue.identifier == "AtoB"  {
             let bviewc = segue.destination as! BViewController
             bviewc.answerReportB = answersReport
+            bviewc.lastIndex = question;
         }
     }
 

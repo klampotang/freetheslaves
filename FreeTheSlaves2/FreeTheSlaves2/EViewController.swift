@@ -11,6 +11,8 @@ import UIKit
 class EViewController: UIViewController {
     var question = 0;
     var answerReportE = [Int]()
+    var lastIndex = 0;
+
 
     let questionsE = ["Survivors of slavery receive appropriate government compensation according to law", "Child survivors of slavery are attending school", "Adult survivors of slavery are earning a livelihood comparable to others in this community", "Survivors of slavery are accessing essential health care", "Survivors of slavery can access support for psychological trauma", "Survivors of slavery are protected from community-wide stigma"]
 
@@ -33,6 +35,8 @@ class EViewController: UIViewController {
     }
     @IBAction func enterPressedE(_ sender: Any) {
         if(question < questionsE.count-1) {
+            answerReportE[lastIndex+question] = segControlE.selectedSegmentIndex
+
             question += 1
             questionE.text = questionsE[question]
         }
@@ -45,6 +49,8 @@ class EViewController: UIViewController {
         if segue.identifier == "EtoF"  {
             let fviewc = segue.destination as! FViewController
             fviewc.answerReportF = answerReportE
+            fviewc.lastIndex = question;
+
         }
     }
 

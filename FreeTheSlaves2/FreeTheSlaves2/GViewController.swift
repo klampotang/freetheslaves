@@ -12,7 +12,7 @@ import UIKit
 
 class GViewController: UIViewController {
     var answerReportG = [Int]()
-    
+    var lastIndex = 0;
     var question = 0;
     let questionsG = ["The group makes its own decisions, without external pressure.", "The group develops good plans for keeping the village free from trafficking and slavery.", "The group is effective at implementing its plans.", "All members participate equitably in carrying out the work of the group.", "The group is effective at advocacy with local authorities", "The group is effective at reducing slavery in the community.", "The group has built strong links with other anti-slavery community groups."]
 
@@ -36,11 +36,13 @@ class GViewController: UIViewController {
     }
     @IBAction func enterPressedG(_ sender: Any) {
         if(question < questionsG.count-1) {
+            answerReportG[lastIndex+question] = segControlG.selectedSegmentIndex
             question += 1
             questionG.text = questionsG[question]
         }
         else {
             print("should put shit in the database")
+            print(answerReportG)
             let cocoaArray : NSArray = answerReportG as NSArray
             cocoaArray.write(toFile: "File.txt", atomically:true);
             

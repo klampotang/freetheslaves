@@ -11,6 +11,8 @@ import UIKit
 class FViewController: UIViewController {
     var question = 0;
     var answerReportF = [Int]()
+    var lastIndex = 0;
+
 
     let questionsF = ["There is an anti-slavery community group that meets regularly", "The community group has good leadership", "Slavery survivors participate effectively in the group", "Poorer households participate effectively in the group", "Discriminated groups participate effectively in the group", "Women participate effectively in the group", "The community group has strong internal cohesion", "The community group is well accepted within the community (while recognizing that those connected with slaveholders and trafficking may not accept the group)", "The group can resolve internal disagreements and maintain unity and trust"]
     @IBOutlet weak var questionF: UILabel!
@@ -32,6 +34,8 @@ class FViewController: UIViewController {
     }
     @IBAction func enterPressedF(_ sender: Any) {
         if(question < questionsF.count-1) {
+            answerReportF[lastIndex+question] = segControlF.selectedSegmentIndex
+
             question += 1
             questionF.text = questionsF[question]
         }
@@ -44,6 +48,8 @@ class FViewController: UIViewController {
         if segue.identifier == "FtoG"  {
             let gviewc = segue.destination as! GViewController
             gviewc.answerReportG = answerReportF
+            gviewc.lastIndex = question;
+
         }
     }
 
