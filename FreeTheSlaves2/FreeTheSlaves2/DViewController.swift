@@ -10,9 +10,14 @@ import UIKit
 
 class DViewController: UIViewController {
     var question = 0;
-    let questionsD = ["Residents in this village know how to protect themselves from trafficking during  migration for work","Residents understand the risks of sending children to distant jobs, e.g. domestic work, mining or stone quarries, and circuses.","Residents are able to identify and pressure known traffickers to leave when they appear in the community.","Residents in this village know how to avoid debt bondage.","Residents understand the risks of early or forced marriage and false offers of marriage.", "Residents are able to confront domestic violence.", "Residents know how to file criminal complaints with the police."]
+    var answerReportD = [Int]()
+    var lastIndex = 0;
+
+
+    let questionsD = ["Residents have economic stability", "Children in this community attend school", "Residents can obtain loans on fair terms", "Residents have enough food throughout the year", "Residents have adequate housing", "Residents have access to essential health care"]
 
     @IBOutlet weak var questionD: UILabel!
+    @IBOutlet weak var segControlD: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
@@ -30,6 +35,7 @@ class DViewController: UIViewController {
     }
     @IBAction func enterPressedD(_ sender: Any) {
         if(question < questionsD.count-1) {
+            answerReportD[lastIndex+question] = segControlD.selectedSegmentIndex
             question += 1
             questionD.text = questionsD[question]
         }
@@ -38,14 +44,13 @@ class DViewController: UIViewController {
         }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "DtoE"  {
+            let eviewc = segue.destination as! EViewController
+            eviewc.answerReportE = answerReportD
+            eviewc.lastIndex = question;
+
+        }
     }
-    */
 
 }

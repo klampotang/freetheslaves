@@ -21,6 +21,10 @@
 		183727161DC439CA00A3AC45 /* FViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183727151DC439CA00A3AC45 /* FViewController.swift */; };
 		183727181DC439D000A3AC45 /* GViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183727171DC439D000A3AC45 /* GViewController.swift */; };
 		1837271A1DC4549900A3AC45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183727191DC4549900A3AC45 /* GoogleService-Info.plist */; };
+		18B3701B1DC470B800D35F67 /* OneReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3701A1DC470B800D35F67 /* OneReport.swift */; };
+		18B3701D1DC47F1100D35F67 /* File.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18B3701C1DC47F1100D35F67 /* File.txt */; };
+		319331A8A61553A5B772F134 /* Pods_FreeTheSlaves2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0731941480CC49579AA3965 /* Pods_FreeTheSlaves2.framework */; };
+		6E2F44A442C108FA43131AC0 /* Pods_FreeTheSlaves2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108367DBE1ACA289AED7D83B /* Pods_FreeTheSlaves2Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		108367DBE1ACA289AED7D83B /* Pods_FreeTheSlaves2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeTheSlaves2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		183726E61DC4323800A3AC45 /* FreeTheSlaves2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeTheSlaves2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		183726E91DC4323800A3AC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		183726EE1DC4323800A3AC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +57,13 @@
 		183727151DC439CA00A3AC45 /* FViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FViewController.swift; sourceTree = "<group>"; };
 		183727171DC439D000A3AC45 /* GViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GViewController.swift; sourceTree = "<group>"; };
 		183727191DC4549900A3AC45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18B3701A1DC470B800D35F67 /* OneReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneReport.swift; sourceTree = "<group>"; };
+		18B3701C1DC47F1100D35F67 /* File.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File.txt; sourceTree = "<group>"; };
+		287F7ABC43C65381A5DB4F1A /* Pods-FreeTheSlaves2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeTheSlaves2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeTheSlaves2Tests/Pods-FreeTheSlaves2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		52F5FD376B9375F1A0292523 /* Pods-FreeTheSlaves2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeTheSlaves2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeTheSlaves2/Pods-FreeTheSlaves2.debug.xcconfig"; sourceTree = "<group>"; };
+		7B8BE637BCF05EF638EE2E01 /* Pods-FreeTheSlaves2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeTheSlaves2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeTheSlaves2Tests/Pods-FreeTheSlaves2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		933A51387EF27A1140C5D6F2 /* Pods-FreeTheSlaves2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeTheSlaves2.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeTheSlaves2/Pods-FreeTheSlaves2.release.xcconfig"; sourceTree = "<group>"; };
+		A0731941480CC49579AA3965 /* Pods_FreeTheSlaves2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeTheSlaves2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319331A8A61553A5B772F134 /* Pods_FreeTheSlaves2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E2F44A442C108FA43131AC0 /* Pods_FreeTheSlaves2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +92,8 @@
 				183726E81DC4323800A3AC45 /* FreeTheSlaves2 */,
 				183726FD1DC4323800A3AC45 /* FreeTheSlaves2Tests */,
 				183726E71DC4323800A3AC45 /* Products */,
+				B1951E4900F11DDA6BFC3C47 /* Pods */,
+				6A95596CC64A5F7F7EF510F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +117,14 @@
 				183727091DC4399000A3AC45 /* LanguageChooserWelcome.swift */,
 				1837270B1DC4399E00A3AC45 /* AViewController.swift */,
 				1837270D1DC439AC00A3AC45 /* BViewController.swift */,
+				18B3701C1DC47F1100D35F67 /* File.txt */,
 				1837270F1DC439B400A3AC45 /* CViewController.swift */,
 				183727111DC439BB00A3AC45 /* DViewController.swift */,
 				183727131DC439C300A3AC45 /* EViewController.swift */,
 				183727151DC439CA00A3AC45 /* FViewController.swift */,
 				183727171DC439D000A3AC45 /* GViewController.swift */,
 				183727191DC4549900A3AC45 /* GoogleService-Info.plist */,
+				18B3701A1DC470B800D35F67 /* OneReport.swift */,
 			);
 			path = FreeTheSlaves2;
 			sourceTree = "<group>";
@@ -120,6 +138,26 @@
 			path = FreeTheSlaves2Tests;
 			sourceTree = "<group>";
 		};
+		6A95596CC64A5F7F7EF510F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0731941480CC49579AA3965 /* Pods_FreeTheSlaves2.framework */,
+				108367DBE1ACA289AED7D83B /* Pods_FreeTheSlaves2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1951E4900F11DDA6BFC3C47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52F5FD376B9375F1A0292523 /* Pods-FreeTheSlaves2.debug.xcconfig */,
+				933A51387EF27A1140C5D6F2 /* Pods-FreeTheSlaves2.release.xcconfig */,
+				287F7ABC43C65381A5DB4F1A /* Pods-FreeTheSlaves2Tests.debug.xcconfig */,
+				7B8BE637BCF05EF638EE2E01 /* Pods-FreeTheSlaves2Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 183727031DC4323800A3AC45 /* Build configuration list for PBXNativeTarget "FreeTheSlaves2" */;
 			buildPhases = (
+				2F4D29C829F1A46230212FFE /* [CP] Check Pods Manifest.lock */,
 				183726E21DC4323800A3AC45 /* Sources */,
 				183726E31DC4323800A3AC45 /* Frameworks */,
 				183726E41DC4323800A3AC45 /* Resources */,
+				9CB3ABE536B2886C8D0C0699 /* [CP] Embed Pods Frameworks */,
+				30CC51E5AF5EEE2FFEF06384 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 183727061DC4323800A3AC45 /* Build configuration list for PBXNativeTarget "FreeTheSlaves2Tests" */;
 			buildPhases = (
+				B6DFD6FF7B86131587D2C0E4 /* [CP] Check Pods Manifest.lock */,
 				183726F61DC4323800A3AC45 /* Sources */,
 				183726F71DC4323800A3AC45 /* Frameworks */,
 				183726F81DC4323800A3AC45 /* Resources */,
+				A83AC4CFFD474BFAA2042A01 /* [CP] Embed Pods Frameworks */,
+				54C0D3024A4241258080B2D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B3701D1DC47F1100D35F67 /* File.txt in Resources */,
 				183726F41DC4323800A3AC45 /* LaunchScreen.storyboard in Resources */,
 				1837271A1DC4549900A3AC45 /* GoogleService-Info.plist in Resources */,
 				183726F11DC4323800A3AC45 /* Assets.xcassets in Resources */,
@@ -220,6 +265,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F4D29C829F1A46230212FFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		30CC51E5AF5EEE2FFEF06384 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeTheSlaves2/Pods-FreeTheSlaves2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54C0D3024A4241258080B2D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeTheSlaves2Tests/Pods-FreeTheSlaves2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CB3ABE536B2886C8D0C0699 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeTheSlaves2/Pods-FreeTheSlaves2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A83AC4CFFD474BFAA2042A01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeTheSlaves2Tests/Pods-FreeTheSlaves2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6DFD6FF7B86131587D2C0E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		183726E21DC4323800A3AC45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -229,6 +367,7 @@
 				183727181DC439D000A3AC45 /* GViewController.swift in Sources */,
 				183727121DC439BB00A3AC45 /* DViewController.swift in Sources */,
 				1837270E1DC439AC00A3AC45 /* BViewController.swift in Sources */,
+				18B3701B1DC470B800D35F67 /* OneReport.swift in Sources */,
 				183727101DC439B400A3AC45 /* CViewController.swift in Sources */,
 				1837270C1DC4399E00A3AC45 /* AViewController.swift in Sources */,
 				183727161DC439CA00A3AC45 /* FViewController.swift in Sources */,
@@ -368,6 +507,7 @@
 		};
 		183727041DC4323800A3AC45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F5FD376B9375F1A0292523 /* Pods-FreeTheSlaves2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F4P428X9U6;
@@ -382,6 +522,7 @@
 		};
 		183727051DC4323800A3AC45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933A51387EF27A1140C5D6F2 /* Pods-FreeTheSlaves2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F4P428X9U6;
@@ -396,6 +537,7 @@
 		};
 		183727071DC4323800A3AC45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 287F7ABC43C65381A5DB4F1A /* Pods-FreeTheSlaves2Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +552,7 @@
 		};
 		183727081DC4323800A3AC45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B8BE637BCF05EF638EE2E01 /* Pods-FreeTheSlaves2Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -441,6 +584,7 @@
 				183727051DC4323800A3AC45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		183727061DC4323800A3AC45 /* Build configuration list for PBXNativeTarget "FreeTheSlaves2Tests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +593,7 @@
 				183727081DC4323800A3AC45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

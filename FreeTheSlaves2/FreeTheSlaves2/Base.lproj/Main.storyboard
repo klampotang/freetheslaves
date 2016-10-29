@@ -144,6 +144,7 @@ any more. </string>
                     </view>
                     <connections>
                         <outlet property="questionA" destination="WAp-Z5-56h" id="jOP-7y-U7g"/>
+                        <outlet property="segControlA" destination="20A-dI-N9A" id="ePg-II-ZtF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ag5-L1-uRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -197,7 +198,7 @@ any more. </string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="vip-to-X5C" kind="show" id="efT-Sr-bTB"/>
+                                    <segue destination="vip-to-X5C" kind="show" identifier="BtoC" id="efT-Sr-bTB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bU-zY-F8O">
@@ -234,6 +235,7 @@ slavery?)</string>
                     </view>
                     <connections>
                         <outlet property="questionB" destination="3bU-zY-F8O" id="4tu-2u-VJX"/>
+                        <outlet property="segControlB" destination="sh4-hs-2c1" id="tUb-hA-ydc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwI-Eu-MYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -287,7 +289,7 @@ slavery?)</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="HLR-0A-sG7" kind="show" id="flY-jD-yLr"/>
+                                    <segue destination="HLR-0A-sG7" kind="show" identifier="CtoD" id="flY-jD-yLr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXK-cU-I06">
@@ -321,6 +323,7 @@ movement? freedom to join groups and assemble? right to education?)</string>
                     </view>
                     <connections>
                         <outlet property="questionC" destination="uXK-cU-I06" id="tni-W6-ble"/>
+                        <outlet property="segControlC" destination="MiN-sB-8Yd" id="Mt4-YD-g5k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8m4-Rd-pa3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -374,7 +377,7 @@ movement? freedom to join groups and assemble? right to education?)</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="BHd-9c-jab" kind="show" id="bBc-vH-0Xd"/>
+                                    <segue destination="BHd-9c-jab" kind="show" identifier="DtoE" id="bBc-vH-0Xd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6A-VA-e3B">
@@ -410,6 +413,7 @@ many families have income generating projects?)</string>
                     </view>
                     <connections>
                         <outlet property="questionD" destination="U6A-VA-e3B" id="laX-dc-bvw"/>
+                        <outlet property="segControlD" destination="ytK-rw-PJ4" id="A3P-GC-Ck6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBK-5g-7EF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -463,7 +467,7 @@ many families have income generating projects?)</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="K0h-dA-atj" kind="show" id="djx-we-u1f"/>
+                                    <segue destination="K0h-dA-atj" kind="show" identifier="EtoF" id="djx-we-u1f"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEu-l6-QsB">
@@ -496,6 +500,7 @@ law</string>
                     </view>
                     <connections>
                         <outlet property="questionE" destination="iEu-l6-QsB" id="hMW-cX-Oly"/>
+                        <outlet property="segControlE" destination="t2q-aT-dxy" id="c4P-hd-vkl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1d-8o-XXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -549,7 +554,7 @@ law</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="Xlp-f7-MTi" kind="show" id="SeN-51-Hu8"/>
+                                    <segue destination="Xlp-f7-MTi" kind="show" identifier="FtoG" id="SeN-51-Hu8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="There is an anti-slavery community group that meets regularly." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtQ-cM-B9E">
@@ -580,6 +585,7 @@ law</string>
                     </view>
                     <connections>
                         <outlet property="questionF" destination="mtQ-cM-B9E" id="q8L-g5-jJC"/>
+                        <outlet property="segControlF" destination="Qs4-HM-rEK" id="H1W-up-YDC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0B-Be-SyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -632,6 +638,9 @@ law</string>
                                 <rect key="frame" x="313" y="617" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="AEE-bM-fpT" kind="show" id="0OF-0T-lug"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The group makes its own decisions, without external pressure" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqX-UU-CcK">
                                 <rect key="frame" x="23" y="60" width="329" height="214"/>
@@ -661,6 +670,7 @@ law</string>
                     </view>
                     <connections>
                         <outlet property="questionG" destination="CqX-UU-CcK" id="rqs-BK-iCu"/>
+                        <outlet property="segControlG" destination="esf-Yy-lEF" id="4gd-av-K3d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zC7-lk-Aya" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -669,11 +679,11 @@ law</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XFu-cW-7Pn"/>
-        <segue reference="j76-0M-EuD"/>
         <segue reference="Gf2-fQ-aRY"/>
+        <segue reference="j76-0M-EuD"/>
+        <segue reference="XFu-cW-7Pn"/>
         <segue reference="SwL-Uk-TRc"/>
-        <segue reference="WYp-5c-tWt"/>
-        <segue reference="GzP-xz-VAL"/>
+        <segue reference="zBk-h0-zPR"/>
+        <segue reference="0OF-0T-lug"/>
     </inferredMetricsTieBreakers>
 </document>

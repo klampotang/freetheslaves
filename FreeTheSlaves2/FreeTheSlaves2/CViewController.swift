@@ -10,8 +10,12 @@ import UIKit
 
 class CViewController: UIViewController {
     var question = 0;
-    let questionsC = ["Residents in this village know how to protect themselves from trafficking during  migration for work","Residents understand the risks of sending children to distant jobs, e.g. domestic work, mining or stone quarries, and circuses.","Residents are able to identify and pressure known traffickers to leave when they appear in the community.","Residents in this village know how to avoid debt bondage.","Residents understand the risks of early or forced marriage and false offers of marriage.", "Residents are able to confront domestic violence.", "Residents know how to file criminal complaints with the police."]
+    var answerReportC = [Int]()
+    var lastIndex = 0;
+
+    let questionsC = ["Residents understand basic human rights","Residents are able to list some of the country’s legal rights for workers”,“Residents know it is a violation of human rights to use force, threat, or fraud to compel someone to go to a workplace or prevent someone from leaving a job","Residents are clearly and non-violently able to communicate their rights to officials and others in power","Residents know how to demand and obtain benefits to which they may be entitled from the government"]
     @IBOutlet weak var questionC: UILabel!
+    @IBOutlet weak var segControlC: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
@@ -29,6 +33,7 @@ class CViewController: UIViewController {
     }
     @IBAction func enterPressedC(_ sender: Any) {
         if(question < questionsC.count-1) {
+            answerReportC[lastIndex+question] = segControlC.selectedSegmentIndex
             question += 1
             questionC.text = questionsC[question]
         }
@@ -38,15 +43,13 @@ class CViewController: UIViewController {
     }
 
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "CtoD"  {
+            let dviewc = segue.destination as! DViewController
+            dviewc.answerReportD = answerReportC
+            dviewc.lastIndex = question;
+
+        }
     }
-    */
 
 }

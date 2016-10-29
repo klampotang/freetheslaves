@@ -8,11 +8,16 @@
 
 import UIKit
 
+
+
 class GViewController: UIViewController {
+    var answerReportG = [Int]()
+    var lastIndex = 0;
     var question = 0;
-    let questionsG = ["Residents in this village know how to protect themselves from trafficking during  migration for work","Residents understand the risks of sending children to distant jobs, e.g. domestic work, mining or stone quarries, and circuses.","Residents are able to identify and pressure known traffickers to leave when they appear in the community.","Residents in this village know how to avoid debt bondage.","Residents understand the risks of early or forced marriage and false offers of marriage.", "Residents are able to confront domestic violence.", "Residents know how to file criminal complaints with the police."]
+    let questionsG = ["The group makes its own decisions, without external pressure.", "The group develops good plans for keeping the village free from trafficking and slavery.", "The group is effective at implementing its plans.", "All members participate equitably in carrying out the work of the group.", "The group is effective at advocacy with local authorities", "The group is effective at reducing slavery in the community.", "The group has built strong links with other anti-slavery community groups."]
 
     @IBOutlet weak var questionG: UILabel!
+    @IBOutlet weak var segControlG: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
@@ -31,23 +36,57 @@ class GViewController: UIViewController {
     }
     @IBAction func enterPressedG(_ sender: Any) {
         if(question < questionsG.count-1) {
+            answerReportG[lastIndex+question] = segControlG.selectedSegmentIndex
             question += 1
             questionG.text = questionsG[question]
         }
         else {
+            print("should put shit in the database")
+            let fileName = "File.txt"
+            var filePath = ""
             
+            // Find documents directory on device
+            let dirs : [String] = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+            
+            if dirs.count > 0 {
+                let dir = dirs[0] //documents directory
+                filePath = dir.appending("/" + fileName)
+                print("Local path = \(filePath)")
+                
+            } else {
+                print("Could not find local directory to store file")
+                
+                return
+            }
+            var concatenatedString = "";
+            for answer in answerReportG {
+                // Set the contents
+                let fileContentToWrite = String(answer)
+                concatenatedString+=fileContentToWrite
+                concatenatedString += "/"
+
+            }
+            do {
+                // Write contents to file
+                try concatenatedString.write(toFile: filePath, atomically: true, encoding: String.Encoding.utf8)
+            }
+            catch let error as NSError {
+                print("An error took place: \(error)")
+            }
+            
+            
+            // Read file content. Example in Swift
+            do {
+                // Read file content
+                let contentFromFile = try NSString(contentsOfFile: filePath, encoding: String.Encoding.utf8.rawValue)
+                print(contentFromFile)
+            }
+            catch let error as NSError {
+                print("An error took place: \(error)")
+            }
         }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
