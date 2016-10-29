@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  FreeTheSlaves
+//  FreeTheSlaves2
 //
-//  Created by Kelly Lampotang on 10/28/16.
-//  Copyright © 2016 soyJPMorganAndChase. All rights reserved.
+//  Created by Janson Lau on 10/28/16.
+//  Copyright © 2016 Janson LauJanson Lau. All rights reserved.
 //
 
 import UIKit
