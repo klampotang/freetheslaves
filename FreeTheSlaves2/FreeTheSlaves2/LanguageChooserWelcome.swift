@@ -15,12 +15,13 @@ class LanguageChooserWelcome: UIViewController, UIPickerViewDataSource, UIPicker
     }
 
     @IBOutlet weak var languageChooser: UIPickerView!
-    let pickerData = ["Akan","French","Haitian French Creole","Hindi","Maithili","Nepali","Wolof","Stilton","Urdu"]
+    let pickerData = ["Akan","Français","Kreyòl ayisyen franse","हिंदी","Maithili","नेपाली","Wolof","Stilton","اردو"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         languageChooser.dataSource = self
         languageChooser.delegate = self
+        loadData();
         
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -38,36 +39,7 @@ class LanguageChooserWelcome: UIViewController, UIPickerViewDataSource, UIPicker
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func loadData(completion: @escaping () -> Void = {}) {
         
-        let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed";
-        let url = NSURL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)");
-        let request = NSURLRequest(url: url! as URL,
-                                   cachePolicy:  NSURLRequest.CachePolicy.reloadIgnoringCacheData,
-                                   timeoutInterval: 10
-        );
-        
-        let session = URLSession(configuration: URLSessionConfiguration.default,
-                                   delegate: nil,
-                                   delegateQueue: OperationQueue.main
-        );
-        
-        
-        let task: URLSessionDataTask = session.dataTask(with: request as URLRequest, completionHandler: { (dataOrNil, response, error) in
-                if let data = dataOrNil {
-                    if let responseDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary {
-                            completion();}
-                    }
-                    else {
-                        if(error != nil){
-                                                                                
-                    }
-            }
-        });
-        
-        task.resume();
-    }
-    
 
     /*
     // MARK: - Navigation

@@ -54,5 +54,6 @@ class AViewController: UIViewController {
             bviewc.lastIndex = question;
         }
     }
+    
 
 }
