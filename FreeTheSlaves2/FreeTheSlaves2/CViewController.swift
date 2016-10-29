@@ -22,6 +22,7 @@ class CViewController: UIViewController {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        loadData();
         // Do any additional setup after loading the view.
     }
 
@@ -39,6 +40,8 @@ class CViewController: UIViewController {
             question += 1
             questionC.text = questionsC[question]
             commentsField.text = "";
+            loadData();
+
 
         }
         else {
@@ -52,12 +55,14 @@ class CViewController: UIViewController {
             let dviewc = segue.destination as! DViewController
             dviewc.answerReportD = answerReportC
             dviewc.lastIndex = question;
+            dviewc.languageChosen = self.languageChosen
+
 
         }
     }
     func loadData(completion: @escaping () -> Void = {}) {
         
-        let formattedString = questionsA[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        let formattedString = questionsC[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
         let chosenLanguageCode = languageCodes[languageChosen]
         let apiKey = "AIzaSyBlyYsRQ6kLmPXfVsXSxJ2QpIVM4ANgvOQ"
         let url = NSURL(string: "https://www.googleapis.com/language/translate/v2?key=\(apiKey)&q=\(formattedString!)&source=en&target=\(chosenLanguageCode)");
@@ -84,7 +89,7 @@ class CViewController: UIViewController {
                     let translationsDict = translations[0] as! NSDictionary
                     let translateString = translationsDict["translatedText"] as! String
                     print(translateString)
-                    self.questionA.text = translateString
+                    self.questionC.text = translateString
                     completion();
                 }
             }

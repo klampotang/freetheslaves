@@ -58,6 +58,7 @@ class AViewController: UIViewController {
             let bviewc = segue.destination as! BViewController
             bviewc.answerReportB = answersReport
             bviewc.lastIndex = question;
+            bviewc.languageChosen = self.languageChosen
         }
     }
     func loadData(completion: @escaping () -> Void = {}) {

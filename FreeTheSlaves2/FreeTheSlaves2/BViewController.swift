@@ -22,6 +22,8 @@ class BViewController: UIViewController {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        loadData();
+
         // Do any additional setup after loading the view.
     }
 
@@ -40,6 +42,8 @@ class BViewController: UIViewController {
             question += 1
             questionB.text = questionsB[question]
             commentsField.text = "";
+            loadData();
+
         }
         else {
             performSegue(withIdentifier: "BtoC", sender: nil)
@@ -52,6 +56,8 @@ class BViewController: UIViewController {
             let cviewc = segue.destination as! CViewController
             cviewc.answerReportC = answerReportB
             cviewc.lastIndex = question;
+            cviewc.languageChosen = self.languageChosen
+
 
         }
     }
@@ -84,7 +90,7 @@ class BViewController: UIViewController {
                     let translationsDict = translations[0] as! NSDictionary
                     let translateString = translationsDict["translatedText"] as! String
                     print(translateString)
-                    self.questionA.text = translateString
+                    self.questionB.text = translateString
                     completion();
                 }
             }

@@ -25,6 +25,8 @@ class GViewController: UIViewController {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        loadData();
+
 
         // Do any additional setup after loading the view.
     }
@@ -39,7 +41,7 @@ class GViewController: UIViewController {
     }
     func loadData(completion: @escaping () -> Void = {}) {
         
-        let formattedString = questionsA[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        let formattedString = questionsG[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
         let chosenLanguageCode = languageCodes[languageChosen]
         let apiKey = "AIzaSyBlyYsRQ6kLmPXfVsXSxJ2QpIVM4ANgvOQ"
         let url = NSURL(string: "https://www.googleapis.com/language/translate/v2?key=\(apiKey)&q=\(formattedString!)&source=en&target=\(chosenLanguageCode)");
@@ -66,7 +68,7 @@ class GViewController: UIViewController {
                     let translationsDict = translations[0] as! NSDictionary
                     let translateString = translationsDict["translatedText"] as! String
                     print(translateString)
-                    self.questionD.text = translateString
+                    self.questionG.text = translateString
                     completion();
                 }
             }
@@ -78,13 +80,18 @@ class GViewController: UIViewController {
         
         task.resume();
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let avc = segue.destination as! AViewController
+        avc.languageChosen = self.languageChosen
+    }
     @IBAction func enterPressedG(_ sender: Any) {
         if(question < questionsG.count-1) {
             answerReportG[lastIndex+question] = segControlG.selectedSegmentIndex
             question += 1
             questionG.text = questionsG[question]
             commentsField.text = "";
+            loadData();
+
 
         }
         else {
