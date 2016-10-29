@@ -6,7 +6,7 @@ target 'FreeTheSlaves2' do
   use_frameworks!
 
   # Pods for FreeTheSlaves2
-pod ‘Firebase’
+pod ‘Firebase/Core’
   target 'FreeTheSlaves2Tests' do
     inherit! :search_paths
     # Pods for testing
