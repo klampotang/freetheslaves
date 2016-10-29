@@ -20,6 +20,7 @@
 		183727141DC439C300A3AC45 /* EViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183727131DC439C300A3AC45 /* EViewController.swift */; };
 		183727161DC439CA00A3AC45 /* FViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183727151DC439CA00A3AC45 /* FViewController.swift */; };
 		183727181DC439D000A3AC45 /* GViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183727171DC439D000A3AC45 /* GViewController.swift */; };
+		1837271A1DC4549900A3AC45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183727191DC4549900A3AC45 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		183727131DC439C300A3AC45 /* EViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EViewController.swift; sourceTree = "<group>"; };
 		183727151DC439CA00A3AC45 /* FViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FViewController.swift; sourceTree = "<group>"; };
 		183727171DC439D000A3AC45 /* GViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GViewController.swift; sourceTree = "<group>"; };
+		183727191DC4549900A3AC45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				183727131DC439C300A3AC45 /* EViewController.swift */,
 				183727151DC439CA00A3AC45 /* FViewController.swift */,
 				183727171DC439D000A3AC45 /* GViewController.swift */,
+				183727191DC4549900A3AC45 /* GoogleService-Info.plist */,
 			);
 			path = FreeTheSlaves2;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				183726F41DC4323800A3AC45 /* LaunchScreen.storyboard in Resources */,
+				1837271A1DC4549900A3AC45 /* GoogleService-Info.plist in Resources */,
 				183726F11DC4323800A3AC45 /* Assets.xcassets in Resources */,
 				183726EF1DC4323800A3AC45 /* Main.storyboard in Resources */,
 			);

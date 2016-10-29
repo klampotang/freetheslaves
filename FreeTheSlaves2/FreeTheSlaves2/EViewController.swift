@@ -28,9 +28,9 @@ class EViewController: UIViewController {
         view.endEditing(true)
     }
     @IBAction func enterPressedE(_ sender: Any) {
-        if(question < questionsD.count-1) {
+        if(question < questionsE.count-1) {
             question += 1
-            questionD.text = questionsD[question]
+            questionE.text = questionsE[question]
         }
         else {
             performSegue(withIdentifier: "EtoF", sender: nil)
