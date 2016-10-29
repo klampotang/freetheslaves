@@ -62,11 +62,10 @@ class AViewController: UIViewController {
     func loadData(completion: @escaping () -> Void = {}) {
         
         let formattedString = questionsA[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
-        
         let chosenLanguageCode = languageCodes[languageChosen]
         let apiKey = "AIzaSyBlyYsRQ6kLmPXfVsXSxJ2QpIVM4ANgvOQ"
-        print(formattedString!)
         let url = NSURL(string: "https://www.googleapis.com/language/translate/v2?key=\(apiKey)&q=\(formattedString!)&source=en&target=\(chosenLanguageCode)");
+        print(url!)
         let request = NSURLRequest(url: url! as URL,
                                    cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringCacheData,
                                    timeoutInterval: 10
