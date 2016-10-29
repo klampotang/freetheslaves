@@ -19,7 +19,7 @@ class GViewController: UIViewController {
     var commentReport = [String](repeating: "", count:45)
 
     let questionsG = ["The group makes its own decisions, without external pressure.", "The group develops good plans for keeping the village free from trafficking and slavery.", "The group is effective at implementing its plans.", "All members participate equitably in carrying out the work of the group.", "The group is effective at advocacy with local authorities", "The group is effective at reducing slavery in the community.", "The group has built strong links with other anti-slavery community groups."]
-
+    let options = ["Completely True", "Partially True", "Completely Untrue"]
     @IBOutlet weak var questionG: UILabel!
     @IBOutlet weak var commentsField: UITextField!
     @IBOutlet weak var segControlG: UISegmentedControl!
@@ -28,8 +28,22 @@ class GViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         if(languageCodes[languageChosen] != "en") {
-            loadData();
+            let formattedString = questionsG[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+            loadData(input: formattedString!, which: 0); //int 0
+            let segControl0 = segControlG.titleForSegment(at: 0)
+            let segControl1 = segControlG.titleForSegment(at: 1)
+            let segControl2 = segControlG.titleForSegment(at: 2)
+            let segControl0formatted = segControl0!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+            let segControl1formatted = segControl1!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+            let segControl2formatted = segControl2!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+
+            loadData(input: segControl0formatted!, which: 1) //1
+            loadData(input: segControl1formatted!, which: 2)//2
+            loadData(input: segControl2formatted!, which: 3)//3
+
+            
         }
+        
 
 
         // Do any additional setup after loading the view.
@@ -43,12 +57,16 @@ class GViewController: UIViewController {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
-    func loadData(completion: @escaping () -> Void = {}) {
+    func loadData(input:String, which:Int, completion: @escaping () -> Void = {}) {
         
-        let formattedString = questionsG[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        
         let chosenLanguageCode = languageCodes[languageChosen]
         let apiKey = "AIzaSyBlyYsRQ6kLmPXfVsXSxJ2QpIVM4ANgvOQ"
-        let url = NSURL(string: "https://www.googleapis.com/language/translate/v2?key=\(apiKey)&q=\(formattedString!)&source=en&target=\(chosenLanguageCode)");
+        let url = NSURL(string: "https://www.googleapis.com/language/translate/v2?key=\(apiKey)&q=\(input)&source=en&target=\(chosenLanguageCode)");
+        print("hipls")
+        print("input")
+        print(input)
+        
         print(url!)
         let request = NSURLRequest(url: url! as URL,
                                    cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringCacheData,
@@ -72,7 +90,22 @@ class GViewController: UIViewController {
                     let translationsDict = translations[0] as! NSDictionary
                     let translateString = translationsDict["translatedText"] as! String
                     print(translateString)
-                    self.questionG.text = translateString
+                    if(which == 0) {
+                        self.questionG.text = translateString
+                        print("hello")
+                    }
+                    else if(which == 1) {
+                        self.segControlG.setTitle(translateString, forSegmentAt: 0)
+
+                    }
+                    else if(which == 2) {
+                        self.segControlG.setTitle(translateString, forSegmentAt: 1)
+                        
+                    }
+                    else if(which == 3) {
+                        self.segControlG.setTitle(translateString, forSegmentAt: 2)
+                        
+                    }
                     completion();
                 }
             }
@@ -84,7 +117,7 @@ class GViewController: UIViewController {
         
         task.resume();
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "Gback") {
             let avc = segue.destination as! FViewController
             avc.languageChosen = self.languageChosen
@@ -102,7 +135,8 @@ class GViewController: UIViewController {
             questionG.text = questionsG[question]
             commentsField.text = "";
             if(languageCodes[languageChosen] != "en") {
-                loadData();
+                let formattedString = questionsG[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+                loadData(input: formattedString!, which: 0); //int 0
             }
 
 

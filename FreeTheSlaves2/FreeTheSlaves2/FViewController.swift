@@ -66,7 +66,6 @@ class FViewController: UIViewController {
             gviewc.languageChosen = self.languageChosen
             gviewc.commentReport = self.commentReport
 
-
         }
         else {
             let gviewc = segue.destination as! EViewController
