@@ -119,7 +119,7 @@ any more. </string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="q8Z-4R-QMh" kind="show" id="WYp-5c-tWt"/>
+                                    <segue destination="q8Z-4R-QMh" kind="show" identifier="AtoB" id="WYp-5c-tWt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNp-s3-g9q">
@@ -673,7 +673,7 @@ law</string>
         <segue reference="j76-0M-EuD"/>
         <segue reference="Gf2-fQ-aRY"/>
         <segue reference="SwL-Uk-TRc"/>
-        <segue reference="zBk-h0-zPR"/>
+        <segue reference="WYp-5c-tWt"/>
         <segue reference="GzP-xz-VAL"/>
     </inferredMetricsTieBreakers>
 </document>

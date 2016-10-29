@@ -1,0 +1,6 @@
+framework module Pods_FreeTheSlaves2Tests {
+  umbrella header "Pods-FreeTheSlaves2Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
