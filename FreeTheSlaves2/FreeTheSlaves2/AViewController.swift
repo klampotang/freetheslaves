@@ -12,8 +12,9 @@ class AViewController: UIViewController {
     var answersReport = [Int](repeating: 0, count: 45)
     var question = 0
     var languageChosen = 0;
-    let questionsA = ["Traffickers, whether from the village or from outside the village, cannot operate any more.","No one residing in this village is in any form of slavery.","People who migrate from this community for work are NOT being trafficked.","None of the children in this village are being exploited for commercial sex","None of the children in this village are performing hazardous labor."]
     let languageCodes = ["en", "fr","ht","hi","en","ne","en","en","ur"]
+
+    let questionsA = ["Traffickers, whether from the village or from outside the village, cannot operate any more.","No one residing in this village is in any form of slavery.","People who migrate from this community for work are NOT being trafficked.","None of the children in this village are being exploited for commercial sex","None of the children in this village are performing hazardous labor."]
     @IBOutlet weak var questionA: UILabel!
     @IBOutlet weak var commentsField: UITextField!
     @IBOutlet weak var segControlA: UISegmentedControl!

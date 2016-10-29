@@ -12,7 +12,8 @@ class DViewController: UIViewController {
     var question = 0;
     var answerReportD = [Int]()
     var lastIndex = 0;
-
+    var languageChosen = 0;
+    let languageCodes = ["en", "fr","ht","hi","en","ne","en","en","ur"]
 
     let questionsD = ["Residents have economic stability", "Children in this community attend school", "Residents can obtain loans on fair terms", "Residents have enough food throughout the year", "Residents have adequate housing", "Residents have access to essential health care"]
 

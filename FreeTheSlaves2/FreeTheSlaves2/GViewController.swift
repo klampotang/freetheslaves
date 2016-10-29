@@ -14,6 +14,8 @@ class GViewController: UIViewController {
     var answerReportG = [Int]()
     var lastIndex = 0;
     var question = 0;
+    var languageChosen = 0;
+    let languageCodes = ["en", "fr","ht","hi","en","ne","en","en","ur"]
     let questionsG = ["The group makes its own decisions, without external pressure.", "The group develops good plans for keeping the village free from trafficking and slavery.", "The group is effective at implementing its plans.", "All members participate equitably in carrying out the work of the group.", "The group is effective at advocacy with local authorities", "The group is effective at reducing slavery in the community.", "The group has built strong links with other anti-slavery community groups."]
 
     @IBOutlet weak var questionG: UILabel!
