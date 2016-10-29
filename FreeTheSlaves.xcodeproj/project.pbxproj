@@ -401,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FreeTheSlaves/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soy10.FreeTheSlaves;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FreeTheSlaves/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soy10.FreeTheSlaves;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,6 +487,7 @@
 				8A73866B1DC416A5009D1C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A73866C1DC416A5009D1C2A /* Build configuration list for PBXNativeTarget "FreeTheSlavesTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +496,7 @@
 				8A73866E1DC416A5009D1C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A73866F1DC416A5009D1C2A /* Build configuration list for PBXNativeTarget "FreeTheSlavesUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +505,7 @@
 				8A7386711DC416A5009D1C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
