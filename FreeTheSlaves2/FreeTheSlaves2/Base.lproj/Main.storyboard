@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Language Chooser Welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FreeTheSlaves2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LanguageChooserWelcome" customModule="FreeTheSlaves2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -55,6 +55,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="languageChooser" destination="QPk-Zn-NKZ" id="Fcu-j3-4bb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,7 +66,7 @@
         <!--View Controller-->
         <scene sceneID="clh-ph-X0Z">
             <objects>
-                <viewController id="AEE-bM-fpT" sceneMemberID="viewController">
+                <viewController id="AEE-bM-fpT" customClass="AViewController" customModule="FreeTheSlaves2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wzL-3a-ZzI"/>
                         <viewControllerLayoutGuide type="bottom" id="Ast-Iz-a3X"/>
@@ -130,7 +133,7 @@ any more. </string>
         <!--View Controller-->
         <scene sceneID="8Qh-iF-ygW">
             <objects>
-                <viewController id="q8Z-4R-QMh" sceneMemberID="viewController">
+                <viewController id="q8Z-4R-QMh" customClass="BViewController" customModule="FreeTheSlaves2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CRx-lj-uEi"/>
                         <viewControllerLayoutGuide type="bottom" id="Z9v-Jh-CjX"/>
@@ -201,7 +204,7 @@ slavery?)</string>
         <!--View Controller-->
         <scene sceneID="PSe-aE-rfJ">
             <objects>
-                <viewController id="vip-to-X5C" sceneMemberID="viewController">
+                <viewController id="vip-to-X5C" customClass="CViewController" customModule="FreeTheSlaves2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5XE-5m-iUg"/>
                         <viewControllerLayoutGuide type="bottom" id="tlz-KQ-Diw"/>
@@ -269,7 +272,7 @@ movement? freedom to join groups and assemble? right to education?)</string>
         <!--View Controller-->
         <scene sceneID="hpF-wK-Ptb">
             <objects>
-                <viewController id="HLR-0A-sG7" sceneMemberID="viewController">
+                <viewController id="HLR-0A-sG7" customClass="DViewController" customModule="FreeTheSlaves2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ywh-Vj-wAh"/>
                         <viewControllerLayoutGuide type="bottom" id="Ko8-gn-34n"/>
@@ -339,7 +342,7 @@ many families have income generating projects?)</string>
         <!--View Controller-->
         <scene sceneID="t9O-TE-4Rf">
             <objects>
-                <viewController id="BHd-9c-jab" sceneMemberID="viewController">
+                <viewController id="BHd-9c-jab" customClass="EViewController" customModule="FreeTheSlaves2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n8a-S5-pga"/>
                         <viewControllerLayoutGuide type="bottom" id="Wo1-KN-poR"/>
@@ -406,7 +409,7 @@ law</string>
         <!--View Controller-->
         <scene sceneID="8gD-ZD-rqS">
             <objects>
-                <viewController id="K0h-dA-atj" sceneMemberID="viewController">
+                <viewController id="K0h-dA-atj" customClass="FViewController" customModule="FreeTheSlaves2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oDj-px-P3w"/>
                         <viewControllerLayoutGuide type="bottom" id="9ue-en-fSh"/>
@@ -471,7 +474,7 @@ law</string>
         <!--View Controller-->
         <scene sceneID="vtB-vF-66Z">
             <objects>
-                <viewController id="Xlp-f7-MTi" sceneMemberID="viewController">
+                <viewController id="Xlp-f7-MTi" customClass="GViewController" customModule="FreeTheSlaves2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yb8-65-iE1"/>
                         <viewControllerLayoutGuide type="bottom" id="1Aa-Vv-1iR"/>

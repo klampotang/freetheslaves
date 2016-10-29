@@ -8,12 +8,30 @@
 
 import UIKit
 
-class LanguageChooserWelcome: UIViewController {
+class LanguageChooserWelcome: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    @available(iOS 2.0, *)
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    @IBOutlet weak var languageChooser: UIPickerView!
+    let pickerData = ["Akan","French","Haitian French Creole","Hindi","Maithili","Nepali","Wolof","Stilton","Urdu"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        languageChooser.dataSource = self
+        languageChooser.delegate = self
+        
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    //MARK: Delegates
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
     }
 
     override func didReceiveMemoryWarning() {
