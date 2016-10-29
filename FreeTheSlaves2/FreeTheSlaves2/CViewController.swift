@@ -37,6 +37,8 @@ class CViewController: UIViewController {
             answerReportC[lastIndex+question] = segControlC.selectedSegmentIndex
             question += 1
             questionC.text = questionsC[question]
+            commentsField.text = "";
+
         }
         else {
             performSegue(withIdentifier: "CtoD", sender: nil)

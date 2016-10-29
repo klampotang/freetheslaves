@@ -39,6 +39,8 @@ class DViewController: UIViewController {
             answerReportD[lastIndex+question] = segControlD.selectedSegmentIndex
             question += 1
             questionD.text = questionsD[question]
+            commentsField.text = "";
+
         }
         else {
             performSegue(withIdentifier: "DtoE", sender: nil)

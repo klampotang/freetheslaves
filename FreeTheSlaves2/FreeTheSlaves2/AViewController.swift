@@ -32,7 +32,7 @@ class AViewController: UIViewController {
             answersReport[question] = segControlA.selectedSegmentIndex
             question += 1
             questionA.text = questionsA[question]
-            
+            commentsField.text = "";
             
         }
         else {

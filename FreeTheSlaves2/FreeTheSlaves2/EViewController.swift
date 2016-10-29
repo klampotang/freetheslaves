@@ -40,6 +40,8 @@ class EViewController: UIViewController {
 
             question += 1
             questionE.text = questionsE[question]
+            commentsField.text = "";
+
         }
         else {
             performSegue(withIdentifier: "EtoF", sender: nil)

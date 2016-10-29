@@ -40,6 +40,8 @@ class GViewController: UIViewController {
             answerReportG[lastIndex+question] = segControlG.selectedSegmentIndex
             question += 1
             questionG.text = questionsG[question]
+            commentsField.text = "";
+
         }
         else {
             print("should put shit in the database")

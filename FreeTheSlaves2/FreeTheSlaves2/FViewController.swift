@@ -39,6 +39,8 @@ class FViewController: UIViewController {
 
             question += 1
             questionF.text = questionsF[question]
+            commentsField.text = "";
+
         }
         else {
             performSegue(withIdentifier: "FtoG", sender: nil)
