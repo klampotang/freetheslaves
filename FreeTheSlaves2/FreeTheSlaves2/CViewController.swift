@@ -14,6 +14,8 @@ class CViewController: UIViewController {
     var lastIndex = 0;
     var languageChosen = 0;
     let languageCodes = ["en", "fr","ht","hi","en","ne","en","en","ur"]
+    var commentReport = [String](repeating: "", count:45)
+
     let questionsC = ["Residents understand basic human rights","Residents are able to list some of the country’s legal rights for workers”,“Residents know it is a violation of human rights to use force, threat, or fraud to compel someone to go to a workplace or prevent someone from leaving a job","Residents are clearly and non-violently able to communicate their rights to officials and others in power","Residents know how to demand and obtain benefits to which they may be entitled from the government"]
     @IBOutlet weak var questionC: UILabel!
     @IBOutlet weak var commentsField: UITextField!
@@ -57,8 +59,16 @@ class CViewController: UIViewController {
             dviewc.answerReportD = answerReportC
             dviewc.lastIndex = question;
             dviewc.languageChosen = self.languageChosen
+            dviewc.commentReport = self.commentReport
 
 
+        }
+        else {
+            let dviewc = segue.destination as! BViewController
+            dviewc.answerReportB = answerReportC
+            dviewc.lastIndex = question;
+            dviewc.languageChosen = self.languageChosen
+            dviewc.commentReport = self.commentReport
         }
     }
     func loadData(completion: @escaping () -> Void = {}) {

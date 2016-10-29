@@ -13,6 +13,8 @@ class BViewController: UIViewController {
     var lastIndex = 0;
     var languageChosen = 0;
     let languageCodes = ["en", "fr","ht","hi","en","ne","en","en","ur"]
+    var commentReport = [String](repeating: "", count:45)
+
     var answerReportB = [Int]()
     let questionsB = ["Residents in this village know how to protect themselves from trafficking during  migration for work","Residents understand the risks of sending children to distant jobs, e.g. domestic work, mining or stone quarries, and circuses.","Residents are able to identify and pressure known traffickers to leave when they appear in the community.","Residents in this village know how to avoid debt bondage.","Residents understand the risks of early or forced marriage and false offers of marriage.", "Residents are able to confront domestic violence.", "Residents know how to file criminal complaints with the police."]
     @IBOutlet weak var questionB: UILabel!
@@ -58,8 +60,13 @@ class BViewController: UIViewController {
             cviewc.answerReportC = answerReportB
             cviewc.lastIndex = question;
             cviewc.languageChosen = self.languageChosen
-
-
+            cviewc.commentReport = self.commentReport
+        }
+        else {
+            let cviewc = segue.destination as! AViewController
+            cviewc.answersReport = answerReportB
+            cviewc.languageChosen = self.languageChosen
+            cviewc.commentReport = self.commentReport
         }
     }
     func loadData(completion: @escaping () -> Void = {}) {

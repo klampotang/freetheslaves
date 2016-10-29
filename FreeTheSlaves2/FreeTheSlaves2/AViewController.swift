@@ -10,6 +10,7 @@ import UIKit
 
 class AViewController: UIViewController {
     var answersReport = [Int](repeating: 0, count: 45)
+    var commentReport = [String](repeating: "", count:45)
     var question = 0
     var languageChosen = 0;
     let languageCodes = ["en", "fr","ht","hi","en","ne","en","en","ur"]
@@ -61,7 +62,10 @@ class AViewController: UIViewController {
             bviewc.answerReportB = answersReport
             bviewc.lastIndex = question;
             bviewc.languageChosen = self.languageChosen
+            bviewc.commentReport = self.commentReport
+
         }
+        
     }
     func loadData(completion: @escaping () -> Void = {}) {
         

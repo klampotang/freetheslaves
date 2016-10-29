@@ -16,6 +16,8 @@ class GViewController: UIViewController {
     var question = 0;
     var languageChosen = 0;
     let languageCodes = ["en", "fr","ht","hi","en","ne","en","en","ur"]
+    var commentReport = [String](repeating: "", count:45)
+
     let questionsG = ["The group makes its own decisions, without external pressure.", "The group develops good plans for keeping the village free from trafficking and slavery.", "The group is effective at implementing its plans.", "All members participate equitably in carrying out the work of the group.", "The group is effective at advocacy with local authorities", "The group is effective at reducing slavery in the community.", "The group has built strong links with other anti-slavery community groups."]
 
     @IBOutlet weak var questionG: UILabel!
@@ -83,8 +85,15 @@ class GViewController: UIViewController {
         task.resume();
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let avc = segue.destination as! AViewController
-        avc.languageChosen = self.languageChosen
+        if(segue.identifier == "Gback") {
+            let avc = segue.destination as! FViewController
+            avc.languageChosen = self.languageChosen
+        }
+        else {
+            let avc = segue.destination as! AViewController
+            avc.languageChosen = self.languageChosen
+
+        }
     }
     @IBAction func enterPressedG(_ sender: Any) {
         if(question < questionsG.count-1) {
@@ -124,9 +133,15 @@ class GViewController: UIViewController {
                 concatenatedString += "/"
 
             }
+            var commentConcat = "";
+            for comment in commentReport {
+                commentConcat += comment;
+                commentConcat += "/"
+            }
             do {
                 // Write contents to file
                 try concatenatedString.write(toFile: filePath, atomically: true, encoding: String.Encoding.utf8)
+                try commentConcat.write(toFile: filePath, atomically: true, encoding: String.Encoding.utf8)
             }
             catch let error as NSError {
                 print("An error took place: \(error)")

@@ -14,6 +14,8 @@ class DViewController: UIViewController {
     var lastIndex = 0;
     var languageChosen = 0;
     let languageCodes = ["en", "fr","ht","hi","en","ne","en","en","ur"]
+    var commentReport = [String](repeating: "", count:45)
+
 
     let questionsD = ["Residents have economic stability", "Children in this community attend school", "Residents can obtain loans on fair terms", "Residents have enough food throughout the year", "Residents have adequate housing", "Residents have access to essential health care"]
 
@@ -61,8 +63,15 @@ class DViewController: UIViewController {
             eviewc.answerReportE = answerReportD
             eviewc.lastIndex = question;
             eviewc.languageChosen = self.languageChosen
+            eviewc.commentReport = self.commentReport
 
-
+        }
+        else {
+            let eviewc = segue.destination as! CViewController
+            eviewc.answerReportC = answerReportD
+            eviewc.lastIndex = question;
+            eviewc.languageChosen = self.languageChosen
+            eviewc.commentReport = self.commentReport
         }
     }
     func loadData(completion: @escaping () -> Void = {}) {
