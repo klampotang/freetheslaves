@@ -24,7 +24,9 @@ class EViewController: UIViewController {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        loadData();
+        if(languageCodes[languageChosen] != "en") {
+            loadData();
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -44,8 +46,9 @@ class EViewController: UIViewController {
             question += 1
             questionE.text = questionsE[question]
             commentsField.text = "";
-            loadData();
-
+            if(languageCodes[languageChosen] != "en") {
+                loadData();
+            }
         }
         else {
             performSegue(withIdentifier: "EtoF", sender: nil)

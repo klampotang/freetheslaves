@@ -22,8 +22,9 @@ class CViewController: UIViewController {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        loadData();
-        // Do any additional setup after loading the view.
+        if(languageCodes[languageChosen] != "en") {
+            loadData();
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,9 +41,9 @@ class CViewController: UIViewController {
             question += 1
             questionC.text = questionsC[question]
             commentsField.text = "";
-            loadData();
-
-
+            if(languageCodes[languageChosen] != "en") {
+                loadData();
+            }
         }
         else {
             performSegue(withIdentifier: "CtoD", sender: nil)

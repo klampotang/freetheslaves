@@ -22,9 +22,9 @@ class BViewController: UIViewController {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        loadData();
-
-        // Do any additional setup after loading the view.
+        if(languageCodes[languageChosen] != "en") {
+            loadData();
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,8 +42,9 @@ class BViewController: UIViewController {
             question += 1
             questionB.text = questionsB[question]
             commentsField.text = "";
-            loadData();
-
+            if(languageCodes[languageChosen] != "en") {
+                loadData();
+            }
         }
         else {
             performSegue(withIdentifier: "BtoC", sender: nil)

@@ -24,7 +24,9 @@ class DViewController: UIViewController {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        loadData();
+        if(languageCodes[languageChosen] != "en") {
+            loadData();
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -43,8 +45,9 @@ class DViewController: UIViewController {
             question += 1
             questionD.text = questionsD[question]
             commentsField.text = "";
-            loadData();
-
+            if(languageCodes[languageChosen] != "en") {
+                loadData();
+            }
 
         }
         else {

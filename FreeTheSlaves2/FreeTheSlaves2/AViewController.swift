@@ -21,7 +21,9 @@ class AViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
+        if(languageCodes[languageChosen] != "en") {
+            loadData();
+        }
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         print(languageCodes[languageChosen])
@@ -38,8 +40,9 @@ class AViewController: UIViewController {
             question += 1
             questionA.text = questionsA[question]
             commentsField.text = "";
-            loadData();
-            
+            if(languageCodes[languageChosen] != "en") {
+                loadData();
+            }
         }
         else {
             performSegue(withIdentifier: "AtoB", sender: nil)
