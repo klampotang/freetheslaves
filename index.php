@@ -45,11 +45,17 @@
                 'from' => "+15108172403", 
                 
                 // the sms body
-                'body' => "Hey $name! What's up?? Hey, how are you??? how is everything????? sadlkaslkfjlkasjklaslkfjalskfjlaskfjalskfjlaskfjlaskfjaslfkjlasfkjslfajflasksaflaksflkagknmsndv,mndskjfiureoiuoeriqwoiruqowiruqworiqwoirllkasjlaskdasldksakljdlakjsnvm,nsdfjalskjlaskfjlaskfjsaflksajfwqproqwpoeqwiqwpoeqopewidfddfslk"
+                'body' => "Hey $name! What's up?"
             )
         );
 
         // Display a confirmation message on the screen
         echo $sms->sid;
         echo "Sent message to $name";
+
+        //this lists all the messages sent and responded
+        foreach ($client->messages->read() as $message) {
+           echo $message->body;
+        }
     }
+
