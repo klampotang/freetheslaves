@@ -49,7 +49,9 @@ class EViewController: UIViewController {
             questionE.text = questionsE[question]
             commentsField.text = "";
             if(languageCodes[languageChosen] != "en") {
-                loadData();
+                let formattedString = questionsE[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+                loadData(input: formattedString!, which: 0); //int 0
+
             }
         }
         else {
@@ -73,12 +75,16 @@ class EViewController: UIViewController {
             fviewc.commentReport = self.commentReport
         }
     }
-    func loadData(completion: @escaping () -> Void = {}) {
+    func loadData(input:String, which:Int, completion: @escaping () -> Void = {}) {
         
-        let formattedString = questionsE[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        
         let chosenLanguageCode = languageCodes[languageChosen]
         let apiKey = "AIzaSyBlyYsRQ6kLmPXfVsXSxJ2QpIVM4ANgvOQ"
-        let url = NSURL(string: "https://www.googleapis.com/language/translate/v2?key=\(apiKey)&q=\(formattedString!)&source=en&target=\(chosenLanguageCode)");
+        let url = NSURL(string: "https://www.googleapis.com/language/translate/v2?key=\(apiKey)&q=\(input)&source=en&target=\(chosenLanguageCode)");
+        print("hipls")
+        print("input")
+        print(input)
+        
         print(url!)
         let request = NSURLRequest(url: url! as URL,
                                    cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringCacheData,
@@ -102,7 +108,21 @@ class EViewController: UIViewController {
                     let translationsDict = translations[0] as! NSDictionary
                     let translateString = translationsDict["translatedText"] as! String
                     print(translateString)
-                    self.questionE.text = translateString
+                    if(which == 0) {
+                        self.questionF.text = translateString
+                    }
+                    else if(which == 1) {
+                        self.segControlF.setTitle(translateString, forSegmentAt: 0)
+                        
+                    }
+                    else if(which == 2) {
+                        self.segControlF.setTitle(translateString, forSegmentAt: 1)
+                        
+                    }
+                    else if(which == 3) {
+                        self.segControlF.setTitle(translateString, forSegmentAt: 2)
+                        
+                    }
                     completion();
                 }
             }
