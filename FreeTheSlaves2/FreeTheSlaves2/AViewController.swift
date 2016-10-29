@@ -10,7 +10,8 @@ import UIKit
 
 class AViewController: UIViewController {
     var question = 1
-    
+    let questionsA = ["Traffickers, whether from the village or from outside the village, cannot operate any more.","No one residing in this village is in any form of slavery.","People who migrate from this community for work are NOT being trafficked.","None of the children in this village are being exploited for commercial sex","None of the children in this village are performing hazardous labor."]
+
     @IBOutlet weak var questionA: UILabel!
     
     override func viewDidLoad() {
@@ -25,8 +26,10 @@ class AViewController: UIViewController {
         view.endEditing(true)
     }
     @IBAction func enterPressed(_ sender: Any) {
-        
+        question += 1
+        questionA.text = questionsA[question]
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
