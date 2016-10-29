@@ -21,7 +21,6 @@ class LanguageChooserWelcome: UIViewController, UIPickerViewDataSource, UIPicker
         super.viewDidLoad()
         languageChooser.dataSource = self
         languageChooser.delegate = self
-        loadData();
         
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
