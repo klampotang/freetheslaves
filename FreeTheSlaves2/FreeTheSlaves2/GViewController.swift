@@ -8,13 +8,15 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
+
 
 class GViewController: UIViewController {
     
     let ref = FIRDatabase.database().reference(withPath: "reports")
     
     var question = 0;
-    let questionsG = ["Residents in this village know how to protect themselves from trafficking during  migration for work","Residents understand the risks of sending children to distant jobs, e.g. domestic work, mining or stone quarries, and circuses.","Residents are able to identify and pressure known traffickers to leave when they appear in the community.","Residents in this village know how to avoid debt bondage.","Residents understand the risks of early or forced marriage and false offers of marriage.", "Residents are able to confront domestic violence.", "Residents know how to file criminal complaints with the police."]
+    let questionsG = ["The group makes its own decisions, without external pressure.", "The group develops good plans for keeping the village free from trafficking and slavery.", "The group is effective at implementing its plans.", "All members participate equitably in carrying out the work of the group.", "The group is effective at advocacy with local authorities", "The group is effective at reducing slavery in the community.", "The group has built strong links with other anti-slavery community groups."]
 
     @IBOutlet weak var questionG: UILabel!
     override func viewDidLoad() {
