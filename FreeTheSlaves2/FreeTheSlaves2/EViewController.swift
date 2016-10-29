@@ -14,6 +14,7 @@ class EViewController: UIViewController {
 
     let questionsE = ["Survivors of slavery receive appropriate government compensation according to law", "Child survivors of slavery are attending school", "Adult survivors of slavery are earning a livelihood comparable to others in this community", "Survivors of slavery are accessing essential health care", "Survivors of slavery can access support for psychological trauma", "Survivors of slavery are protected from community-wide stigma"]
 
+    @IBOutlet weak var segControlE: UISegmentedControl!
     @IBOutlet weak var questionE: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()

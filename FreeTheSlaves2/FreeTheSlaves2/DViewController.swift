@@ -15,6 +15,7 @@ class DViewController: UIViewController {
     let questionsD = ["Residents have economic stability", "Children in this community attend school", "Residents can obtain loans on fair terms", "Residents have enough food throughout the year", "Residents have adequate housing", "Residents have access to essential health care"]
 
     @IBOutlet weak var questionD: UILabel!
+    @IBOutlet weak var segControlD: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))

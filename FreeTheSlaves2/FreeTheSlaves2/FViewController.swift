@@ -14,6 +14,7 @@ class FViewController: UIViewController {
 
     let questionsF = ["There is an anti-slavery community group that meets regularly", "The community group has good leadership", "Slavery survivors participate effectively in the group", "Poorer households participate effectively in the group", "Discriminated groups participate effectively in the group", "Women participate effectively in the group", "The community group has strong internal cohesion", "The community group is well accepted within the community (while recognizing that those connected with slaveholders and trafficking may not accept the group)", "The group can resolve internal disagreements and maintain unity and trust"]
     @IBOutlet weak var questionF: UILabel!
+    @IBOutlet weak var segControlF: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))

@@ -13,6 +13,7 @@ class AViewController: UIViewController {
     var question = 0
     let questionsA = ["Traffickers, whether from the village or from outside the village, cannot operate any more.","No one residing in this village is in any form of slavery.","People who migrate from this community for work are NOT being trafficked.","None of the children in this village are being exploited for commercial sex","None of the children in this village are performing hazardous labor."]
     @IBOutlet weak var questionA: UILabel!
+    @IBOutlet weak var segControlA: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,10 @@ class AViewController: UIViewController {
     }
     @IBAction func enterPressed(_ sender: Any) {
         if(question < questionsA.count-1) {
+            answersReport[question] = segControlA.selectedSegmentIndex
             question += 1
             questionA.text = questionsA[question]
+            
         }
         else {
             performSegue(withIdentifier: "AtoB", sender: nil)
