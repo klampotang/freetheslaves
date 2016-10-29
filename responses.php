@@ -16,7 +16,19 @@
         $counter = 0;
     }
 
-    if($counter > 10) {
+    // get the language varible if it exists
+    if (!isset($_SESSION['language'])) {
+    	$_SESSION['language'] = 1;
+    	
+	}
+	$language = $_SESSION['language'];
+
+    // if it doesnt, set the default
+   // if(!strlen($language)) {
+     //   $language = 1;
+    //}
+
+    if($counter > 11) {
 		$counter = 0;
 	}
 
@@ -25,6 +37,7 @@
 
     // save it
     $_SESSION['counter'] = $counter;
+    $_SESSION['language'] = $language;
 
 	$respmessage = "";
 	
@@ -50,10 +63,19 @@
     //}
     if($counter === 1) {
     	$respmessage = "Please choose your language. Enter 1- English; 2- Hindi; 3- French ";
-    } 
-
-    if ($counter === 2) {
-    	if($last_message == "1") {
+    } elseif ($counter === 2) {
+    	//check for language input
+    	if($last_message === "1") {
+    		$language = 1;
+    		$respmessage = "Traffickers, whether from the village or from outside the village, cannot operate anymore. Enter 1- completely true; 2- partially true; 3- completely untrue ";	
+    	} elseif ($last_message === "2") {
+    		$language = 2;
+    		$respmessage = "Message in Hindi";
+    	} elseif ($last_message === "3") {
+    		$language = 3;
+    		$respmessage = "Message in French";
+    	//if none of the other languages were chosen, default to English
+    	} else {
     		$respmessage = "Traffickers, whether from the village or from outside the village, cannot operate anymore. Enter 1- completely true; 2- partially true; 3- completely untrue ";	
     	}
     	
@@ -87,5 +109,5 @@
     echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 ?>
 <Response>
-    <SMS>LAST MESSAGE:  <?php echo $last_message ?> <?php echo $respmessage ?> <?php echo $counter ?> times</SMS>
+    <SMS>LANGUAGE:<?php echo $language ?> LAST MESSAGE: <?php echo $last_message ?> <?php echo $respmessage ?> <?php echo $counter ?> times</SMS>
 </Response>
