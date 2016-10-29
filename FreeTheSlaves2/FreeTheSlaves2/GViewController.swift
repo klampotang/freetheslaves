@@ -10,7 +10,9 @@ import UIKit
 import Firebase
 
 class GViewController: UIViewController {
+    
     let ref = FIRDatabase.database().reference(withPath: "reports")
+    
     var question = 0;
     let questionsG = ["Residents in this village know how to protect themselves from trafficking during  migration for work","Residents understand the risks of sending children to distant jobs, e.g. domestic work, mining or stone quarries, and circuses.","Residents are able to identify and pressure known traffickers to leave when they appear in the community.","Residents in this village know how to avoid debt bondage.","Residents understand the risks of early or forced marriage and false offers of marriage.", "Residents are able to confront domestic violence.", "Residents know how to file criminal complaints with the police."]
 
