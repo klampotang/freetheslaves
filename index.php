@@ -55,7 +55,7 @@
 
         //this lists all the messages sent and responded
         foreach ($client->messages->read() as $message) {
-           echo $message->body;
+           echo $message->body .'  '; 
         }
     }
 
