@@ -42,10 +42,48 @@ class GViewController: UIViewController {
         }
         else {
             print("should put shit in the database")
-            print(answerReportG)
-            let cocoaArray : NSArray = answerReportG as NSArray
-            cocoaArray.write(toFile: "File.txt", atomically:true);
+            let fileName = "File.txt"
+            var filePath = ""
             
+            // Find documents directory on device
+            let dirs : [String] = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+            
+            if dirs.count > 0 {
+                let dir = dirs[0] //documents directory
+                filePath = dir.appending("/" + fileName)
+                print("Local path = \(filePath)")
+                
+            } else {
+                print("Could not find local directory to store file")
+                
+                return
+            }
+            var concatenatedString = "";
+            for answer in answerReportG {
+                // Set the contents
+                let fileContentToWrite = String(answer)
+                concatenatedString+=fileContentToWrite
+                concatenatedString += "/"
+
+            }
+            do {
+                // Write contents to file
+                try concatenatedString.write(toFile: filePath, atomically: true, encoding: String.Encoding.utf8)
+            }
+            catch let error as NSError {
+                print("An error took place: \(error)")
+            }
+            
+            
+            // Read file content. Example in Swift
+            do {
+                // Read file content
+                let contentFromFile = try NSString(contentsOfFile: filePath, encoding: String.Encoding.utf8.rawValue)
+                print(contentFromFile)
+            }
+            catch let error as NSError {
+                print("An error took place: \(error)")
+            }
         }
     }
     
