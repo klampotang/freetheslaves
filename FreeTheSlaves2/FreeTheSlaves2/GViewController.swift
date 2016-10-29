@@ -99,7 +99,7 @@ class GViewController: UIViewController {
 
         }
         else {
-            print("should put shit in the database")
+            print("should put stuff in the database")
             let fileName = "File.txt"
             var filePath = ""
             
