@@ -55,5 +55,47 @@ class FViewController: UIViewController {
 
         }
     }
+    func loadData(completion: @escaping () -> Void = {}) {
+        
+        let formattedString = questionsA[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        let chosenLanguageCode = languageCodes[languageChosen]
+        let apiKey = "AIzaSyBlyYsRQ6kLmPXfVsXSxJ2QpIVM4ANgvOQ"
+        let url = NSURL(string: "https://www.googleapis.com/language/translate/v2?key=\(apiKey)&q=\(formattedString!)&source=en&target=\(chosenLanguageCode)");
+        print(url!)
+        let request = NSURLRequest(url: url! as URL,
+                                   cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringCacheData,
+                                   timeoutInterval: 10
+        );
+        
+        let session = URLSession(configuration: URLSessionConfiguration.default,
+                                 delegate: nil,
+                                 delegateQueue: OperationQueue.main
+        );
+        
+        
+        
+        let task: URLSessionDataTask = session.dataTask(with: request as URLRequest, completionHandler: { (dataOrNil, response, error) in
+            if let data = dataOrNil {
+                if let responseDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary {
+                    print(responseDictionary)
+                    
+                    let data1 = responseDictionary["data"] as! NSDictionary
+                    let translations = data1["translations"] as! NSArray
+                    let translationsDict = translations[0] as! NSDictionary
+                    let translateString = translationsDict["translatedText"] as! String
+                    print(translateString)
+                    self.questionD.text = translateString
+                    completion();
+                }
+            }
+            else {
+                if(error != nil){
+                }
+            }
+        });
+        
+        task.resume();
+    }
+
 
 }
