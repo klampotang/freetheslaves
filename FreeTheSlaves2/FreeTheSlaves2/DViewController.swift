@@ -27,7 +27,20 @@ class DViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         if(languageCodes[languageChosen] != "en") {
-            loadData();
+            let formattedString = questionsD[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) // format question string with percentage encoding
+            loadData(input: formattedString!, which: 0); //int 0
+            let segControl0 = segControlD.titleForSegment(at: 0)
+            let segControl1 = segControlD.titleForSegment(at: 1)
+            let segControl2 = segControlD.titleForSegment(at: 2)
+            
+            let segControl0formatted = segControl0!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) // percentage encoding for seg control 0
+            let segControl1formatted = segControl1!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) // percentage encoding for seg control 1
+            let segControl2formatted = segControl2!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) // percentage encoding for seg control 2
+            
+            loadData(input: segControl0formatted!, which: 1) //1
+            loadData(input: segControl1formatted!, which: 2)//2
+            loadData(input: segControl2formatted!, which: 3)//3
+
         }
 
         // Do any additional setup after loading the view.
@@ -48,7 +61,8 @@ class DViewController: UIViewController {
             questionD.text = questionsD[question]
             commentsField.text = "";
             if(languageCodes[languageChosen] != "en") {
-                loadData();
+                let formattedString = questionsD[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+                loadData(input: formattedString!, which: 0); //int 0
             }
 
         }
@@ -74,7 +88,7 @@ class DViewController: UIViewController {
             eviewc.commentReport = self.commentReport
         }
     }
-    func loadData(completion: @escaping () -> Void = {}) {
+    func loadData(input:String, which:Int, completion: @escaping () -> Void = {}) {
         
         let formattedString = questionsD[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
         let chosenLanguageCode = languageCodes[languageChosen]
@@ -102,8 +116,24 @@ class DViewController: UIViewController {
                     let translations = data1["translations"] as! NSArray
                     let translationsDict = translations[0] as! NSDictionary
                     let translateString = translationsDict["translatedText"] as! String
-                    print(translateString)
-                    self.questionD.text = translateString
+                    
+                    if(which == 0) {
+                        self.questionD.text = translateString
+                    }
+                    else if(which == 1) {
+                        self.segControlD.setTitle(translateString, forSegmentAt: 0)
+                        
+                    }
+                    else if(which == 2) {
+                        self.segControlD.setTitle(translateString, forSegmentAt: 1)
+                        
+                    }
+                    else if(which == 3) {
+                        self.segControlD.setTitle(translateString, forSegmentAt: 2)
+                        
+                    }
+
+                    
                     completion();
                 }
             }

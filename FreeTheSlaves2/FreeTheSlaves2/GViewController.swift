@@ -28,20 +28,19 @@ class GViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         if(languageCodes[languageChosen] != "en") {
-            let formattedString = questionsG[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+            let formattedString = questionsG[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) // format question string with percentage encoding
             loadData(input: formattedString!, which: 0); //int 0
             let segControl0 = segControlG.titleForSegment(at: 0)
             let segControl1 = segControlG.titleForSegment(at: 1)
             let segControl2 = segControlG.titleForSegment(at: 2)
-            let segControl0formatted = segControl0!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
-            let segControl1formatted = segControl1!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
-            let segControl2formatted = segControl2!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+            
+            let segControl0formatted = segControl0!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) // percentage encoding for seg control 0
+            let segControl1formatted = segControl1!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) // percentage encoding for seg control 1
+            let segControl2formatted = segControl2!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) // percentage encoding for seg control 2
 
             loadData(input: segControl0formatted!, which: 1) //1
             loadData(input: segControl1formatted!, which: 2)//2
             loadData(input: segControl2formatted!, which: 3)//3
-
-            
         }
         
 
@@ -63,11 +62,7 @@ class GViewController: UIViewController {
         let chosenLanguageCode = languageCodes[languageChosen]
         let apiKey = "AIzaSyBlyYsRQ6kLmPXfVsXSxJ2QpIVM4ANgvOQ"
         let url = NSURL(string: "https://www.googleapis.com/language/translate/v2?key=\(apiKey)&q=\(input)&source=en&target=\(chosenLanguageCode)");
-        print("hipls")
-        print("input")
-        print(input)
         
-        print(url!)
         let request = NSURLRequest(url: url! as URL,
                                    cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringCacheData,
                                    timeoutInterval: 10
@@ -92,7 +87,6 @@ class GViewController: UIViewController {
                     print(translateString)
                     if(which == 0) {
                         self.questionG.text = translateString
-                        print("hello")
                     }
                     else if(which == 1) {
                         self.segControlG.setTitle(translateString, forSegmentAt: 0)

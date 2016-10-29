@@ -27,7 +27,18 @@ class EViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         if(languageCodes[languageChosen] != "en") {
-            loadData();
+            let formattedString = questionsE[question].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+            loadData(input: formattedString!, which: 0); //int 0
+            let segControl0 = segControlE.titleForSegment(at: 0)
+            let segControl1 = segControlE.titleForSegment(at: 1)
+            let segControl2 = segControlE.titleForSegment(at: 2)
+            let segControl0formatted = segControl0!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+            let segControl1formatted = segControl1!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+            let segControl2formatted = segControl2!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+            
+            loadData(input: segControl0formatted!, which: 1) //1
+            loadData(input: segControl1formatted!, which: 2)//2
+            loadData(input: segControl2formatted!, which: 3)//3
         }
 
         // Do any additional setup after loading the view.
@@ -81,11 +92,7 @@ class EViewController: UIViewController {
         let chosenLanguageCode = languageCodes[languageChosen]
         let apiKey = "AIzaSyBlyYsRQ6kLmPXfVsXSxJ2QpIVM4ANgvOQ"
         let url = NSURL(string: "https://www.googleapis.com/language/translate/v2?key=\(apiKey)&q=\(input)&source=en&target=\(chosenLanguageCode)");
-        print("hipls")
-        print("input")
-        print(input)
         
-        print(url!)
         let request = NSURLRequest(url: url! as URL,
                                    cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringCacheData,
                                    timeoutInterval: 10
@@ -109,18 +116,18 @@ class EViewController: UIViewController {
                     let translateString = translationsDict["translatedText"] as! String
                     print(translateString)
                     if(which == 0) {
-                        self.questionF.text = translateString
+                        self.questionE.text = translateString
                     }
                     else if(which == 1) {
-                        self.segControlF.setTitle(translateString, forSegmentAt: 0)
+                        self.segControlE.setTitle(translateString, forSegmentAt: 0)
                         
                     }
                     else if(which == 2) {
-                        self.segControlF.setTitle(translateString, forSegmentAt: 1)
+                        self.segControlE.setTitle(translateString, forSegmentAt: 1)
                         
                     }
                     else if(which == 3) {
-                        self.segControlF.setTitle(translateString, forSegmentAt: 2)
+                        self.segControlE.setTitle(translateString, forSegmentAt: 2)
                         
                     }
                     completion();
