@@ -10,6 +10,8 @@ import UIKit
 
 class DViewController: UIViewController {
     var question = 0;
+    var answerReportD = [Int]()
+
     let questionsD = ["Residents have economic stability", "Children in this community attend school", "Residents can obtain loans on fair terms", "Residents have enough food throughout the year", "Residents have adequate housing", "Residents have access to essential health care"]
 
     @IBOutlet weak var questionD: UILabel!
@@ -38,14 +40,11 @@ class DViewController: UIViewController {
         }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "DtoE"  {
+            let eviewc = segue.destination as! EViewController
+            eviewc.answerReportE = answerReportD
+        }
     }
-    */
 
 }

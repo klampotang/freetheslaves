@@ -21,6 +21,7 @@
 		183727161DC439CA00A3AC45 /* FViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183727151DC439CA00A3AC45 /* FViewController.swift */; };
 		183727181DC439D000A3AC45 /* GViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183727171DC439D000A3AC45 /* GViewController.swift */; };
 		1837271A1DC4549900A3AC45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183727191DC4549900A3AC45 /* GoogleService-Info.plist */; };
+		18B3701B1DC470B800D35F67 /* OneReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3701A1DC470B800D35F67 /* OneReport.swift */; };
 		319331A8A61553A5B772F134 /* Pods_FreeTheSlaves2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0731941480CC49579AA3965 /* Pods_FreeTheSlaves2.framework */; };
 		6E2F44A442C108FA43131AC0 /* Pods_FreeTheSlaves2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108367DBE1ACA289AED7D83B /* Pods_FreeTheSlaves2Tests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		183727151DC439CA00A3AC45 /* FViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FViewController.swift; sourceTree = "<group>"; };
 		183727171DC439D000A3AC45 /* GViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GViewController.swift; sourceTree = "<group>"; };
 		183727191DC4549900A3AC45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18B3701A1DC470B800D35F67 /* OneReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneReport.swift; sourceTree = "<group>"; };
 		287F7ABC43C65381A5DB4F1A /* Pods-FreeTheSlaves2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeTheSlaves2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeTheSlaves2Tests/Pods-FreeTheSlaves2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		52F5FD376B9375F1A0292523 /* Pods-FreeTheSlaves2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeTheSlaves2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeTheSlaves2/Pods-FreeTheSlaves2.debug.xcconfig"; sourceTree = "<group>"; };
 		7B8BE637BCF05EF638EE2E01 /* Pods-FreeTheSlaves2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeTheSlaves2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeTheSlaves2Tests/Pods-FreeTheSlaves2Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				183727151DC439CA00A3AC45 /* FViewController.swift */,
 				183727171DC439D000A3AC45 /* GViewController.swift */,
 				183727191DC4549900A3AC45 /* GoogleService-Info.plist */,
+				18B3701A1DC470B800D35F67 /* OneReport.swift */,
 			);
 			path = FreeTheSlaves2;
 			sourceTree = "<group>";
@@ -271,7 +274,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		30CC51E5AF5EEE2FFEF06384 /* [CP] Copy Pods Resources */ = {
@@ -346,7 +349,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -360,6 +363,7 @@
 				183727181DC439D000A3AC45 /* GViewController.swift in Sources */,
 				183727121DC439BB00A3AC45 /* DViewController.swift in Sources */,
 				1837270E1DC439AC00A3AC45 /* BViewController.swift in Sources */,
+				18B3701B1DC470B800D35F67 /* OneReport.swift in Sources */,
 				183727101DC439B400A3AC45 /* CViewController.swift in Sources */,
 				1837270C1DC4399E00A3AC45 /* AViewController.swift in Sources */,
 				183727161DC439CA00A3AC45 /* FViewController.swift in Sources */,
@@ -576,6 +580,7 @@
 				183727051DC4323800A3AC45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		183727061DC4323800A3AC45 /* Build configuration list for PBXNativeTarget "FreeTheSlaves2Tests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +589,7 @@
 				183727081DC4323800A3AC45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

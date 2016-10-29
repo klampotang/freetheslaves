@@ -10,6 +10,7 @@ import UIKit
 
 class CViewController: UIViewController {
     var question = 0;
+    var answerReportC = [Int]()
     let questionsC = ["Residents understand basic human rights","Residents are able to list some of the country’s legal rights for workers”,“Residents know it is a violation of human rights to use force, threat, or fraud to compel someone to go to a workplace or prevent someone from leaving a job","Residents are clearly and non-violently able to communicate their rights to officials and others in power","Residents know how to demand and obtain benefits to which they may be entitled from the government"]
     @IBOutlet weak var questionC: UILabel!
     override func viewDidLoad() {
@@ -38,15 +39,11 @@ class CViewController: UIViewController {
     }
 
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "CtoD"  {
+            let dviewc = segue.destination as! DViewController
+            dviewc.answerReportD = answerReportC
+        }
     }
-    */
 
 }

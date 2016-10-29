@@ -10,6 +10,8 @@ import UIKit
 
 class EViewController: UIViewController {
     var question = 0;
+    var answerReportE = [Int]()
+
     let questionsE = ["Survivors of slavery receive appropriate government compensation according to law", "Child survivors of slavery are attending school", "Adult survivors of slavery are earning a livelihood comparable to others in this community", "Survivors of slavery are accessing essential health care", "Survivors of slavery can access support for psychological trauma", "Survivors of slavery are protected from community-wide stigma"]
 
     @IBOutlet weak var questionE: UILabel!
@@ -38,14 +40,11 @@ class EViewController: UIViewController {
         }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "EtoF"  {
+            let fviewc = segue.destination as! FViewController
+            fviewc.answerReportF = answerReportE
+        }
     }
-    */
 
 }
