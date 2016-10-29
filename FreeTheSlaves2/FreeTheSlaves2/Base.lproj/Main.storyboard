@@ -222,6 +222,9 @@ slavery?)</string>
                                 <rect key="frame" x="164" y="560" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterPressedB:" destination="q8Z-4R-QMh" eventType="touchUpInside" id="LNH-jO-dF2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -303,6 +306,9 @@ movement? freedom to join groups and assemble? right to education?)</string>
                                 <rect key="frame" x="168" y="565" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterPressedC:" destination="vip-to-X5C" eventType="touchUpInside" id="Ctg-1I-dF3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -386,6 +392,9 @@ many families have income generating projects?)</string>
                                 <rect key="frame" x="168" y="570" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterPressedD:" destination="HLR-0A-sG7" eventType="touchUpInside" id="9jH-6g-Ueg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -466,6 +475,9 @@ law</string>
                                 <rect key="frame" x="168" y="569" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterPressedE:" destination="BHd-9c-jab" eventType="touchUpInside" id="xQP-aV-Lf6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -544,6 +556,9 @@ law</string>
                                 <rect key="frame" x="164" y="570" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterPressedF:" destination="K0h-dA-atj" eventType="touchUpInside" id="qRe-IK-Qrc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -619,6 +634,9 @@ law</string>
                                 <rect key="frame" x="164" y="563" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterPressedG:" destination="Xlp-f7-MTi" eventType="touchUpInside" id="dpL-Kv-hYw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

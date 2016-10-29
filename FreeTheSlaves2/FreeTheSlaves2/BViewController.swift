@@ -26,6 +26,8 @@ class BViewController: UIViewController {
         view.endEditing(true)
     }
 
+    @IBAction func enterPressedB(_ sender: Any) {
+    }
     
 
     /*
