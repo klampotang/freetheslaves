@@ -100,43 +100,44 @@ any more. </string>
                                     <segment title="Partially True"/>
                                     <segment title="Completely Untrue"/>
                                 </segments>
+                                <color key="tintColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xZ-oF-l1A">
-                                <rect key="frame" x="36" y="384" width="311" height="30"/>
+                                <rect key="frame" x="36" y="421" width="311" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCn-Ec-8iu">
-                                <rect key="frame" x="125" y="341" width="132" height="21"/>
+                                <rect key="frame" x="125" y="363" width="132" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNp-s3-g9q">
-                                <rect key="frame" x="168" y="553" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter"/>
-                                <connections>
-                                    <action selector="enterPressed:" destination="AEE-bM-fpT" eventType="touchUpInside" id="Imu-aH-d1R"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFG-eK-G34">
-                                <rect key="frame" x="16" y="617" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="MGN-2V-5hu"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vs-YC-fsd">
-                                <rect key="frame" x="289" y="608" width="86" height="48"/>
+                                <rect key="frame" x="309" y="608" width="66" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow"/>
                                 <connections>
                                     <segue destination="q8Z-4R-QMh" kind="show" identifier="AtoB" id="WYp-5c-tWt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNp-s3-g9q">
+                                <rect key="frame" x="161" y="507" width="60" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="down"/>
+                                <connections>
+                                    <action selector="enterPressed:" destination="AEE-bM-fpT" eventType="touchUpInside" id="Imu-aH-d1R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFG-eK-G34">
+                                <rect key="frame" x="0.0" y="593" width="74" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="left"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="MGN-2V-5hu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -164,6 +165,13 @@ any more. </string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKY-1V-UAR">
+                                <rect key="frame" x="0.0" y="18" width="102" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sh4-hs-2c1">
                                 <rect key="frame" x="0.0" y="281" width="375" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -172,6 +180,7 @@ any more. </string>
                                     <segment title="Some Residents"/>
                                     <segment title="No Residents"/>
                                 </segments>
+                                <color key="tintColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7p-Jx-D14">
                                 <rect key="frame" x="36" y="382" width="311" height="30"/>
@@ -208,29 +217,22 @@ slavery?)</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8G-8C-zOB">
-                                <rect key="frame" x="16" y="617" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8G-8C-zOB">
+                                <rect key="frame" x="15" y="608" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" image="left"/>
                                 <connections>
                                     <segue destination="AEE-bM-fpT" kind="show" id="GzP-xz-VAL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tG-nG-xvh">
-                                <rect key="frame" x="164" y="560" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tG-nG-xvh">
+                                <rect key="frame" x="161" y="505" width="60" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter"/>
+                                <state key="normal" image="down"/>
                                 <connections>
                                     <action selector="enterPressedB:" destination="q8Z-4R-QMh" eventType="touchUpInside" id="LNH-jO-dF2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKY-1V-UAR">
-                                <rect key="frame" x="0.0" y="18" width="102" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
-                                <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -263,6 +265,7 @@ slavery?)</string>
                                     <segment title="Some Residents"/>
                                     <segment title="No Residents"/>
                                 </segments>
+                                <color key="tintColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uKL-sr-4tw">
                                 <rect key="frame" x="36" y="382" width="311" height="30"/>
@@ -296,20 +299,12 @@ movement? freedom to join groups and assemble? right to education?)</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR8-S5-nRi">
-                                <rect key="frame" x="23" y="610" width="46" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR8-S5-nRi">
+                                <rect key="frame" x="22" y="605" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" image="left"/>
                                 <connections>
                                     <segue destination="q8Z-4R-QMh" kind="show" id="zBk-h0-zPR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjy-hl-TTD">
-                                <rect key="frame" x="168" y="565" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter"/>
-                                <connections>
-                                    <action selector="enterPressedC:" destination="vip-to-X5C" eventType="touchUpInside" id="Ctg-1I-dF3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROp-Kx-npK">
@@ -319,6 +314,14 @@ movement? freedom to join groups and assemble? right to education?)</string>
                                 <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjy-hl-TTD">
+                                <rect key="frame" x="157" y="507" width="60" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="down"/>
+                                <connections>
+                                    <action selector="enterPressedC:" destination="vip-to-X5C" eventType="touchUpInside" id="Ctg-1I-dF3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -351,6 +354,7 @@ movement? freedom to join groups and assemble? right to education?)</string>
                                     <segment title="Some Residents"/>
                                     <segment title="No Residents"/>
                                 </segments>
+                                <color key="tintColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S4h-fC-c8y">
                                 <rect key="frame" x="36" y="382" width="311" height="30"/>
@@ -386,20 +390,12 @@ many families have income generating projects?)</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMp-gy-64z">
-                                <rect key="frame" x="23" y="617" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMp-gy-64z">
+                                <rect key="frame" x="2" y="608" width="88" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" image="left"/>
                                 <connections>
                                     <segue destination="vip-to-X5C" kind="show" id="SwL-Uk-TRc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzG-Yf-dUm">
-                                <rect key="frame" x="168" y="570" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter"/>
-                                <connections>
-                                    <action selector="enterPressedD:" destination="HLR-0A-sG7" eventType="touchUpInside" id="9jH-6g-Ueg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUY-Io-uyZ">
@@ -409,6 +405,14 @@ many families have income generating projects?)</string>
                                 <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzG-Yf-dUm">
+                                <rect key="frame" x="161" y="511" width="60" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="down"/>
+                                <connections>
+                                    <action selector="enterPressedD:" destination="HLR-0A-sG7" eventType="touchUpInside" id="9jH-6g-Ueg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -441,6 +445,7 @@ many families have income generating projects?)</string>
                                     <segment title="Some Survivors"/>
                                     <segment title="No Survivors"/>
                                 </segments>
+                                <color key="tintColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="30j-eA-16n">
                                 <rect key="frame" x="36" y="382" width="311" height="30"/>
@@ -473,20 +478,12 @@ law</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6P-oC-wRb">
-                                <rect key="frame" x="23" y="617" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6P-oC-wRb">
+                                <rect key="frame" x="22" y="608" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" image="left"/>
                                 <connections>
                                     <segue destination="HLR-0A-sG7" kind="show" id="XFu-cW-7Pn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiI-Wj-Fhq">
-                                <rect key="frame" x="168" y="569" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter"/>
-                                <connections>
-                                    <action selector="enterPressedE:" destination="BHd-9c-jab" eventType="touchUpInside" id="xQP-aV-Lf6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpx-uw-wo3">
@@ -496,6 +493,14 @@ law</string>
                                 <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiI-Wj-Fhq">
+                                <rect key="frame" x="161" y="514" width="60" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="down"/>
+                                <connections>
+                                    <action selector="enterPressedE:" destination="BHd-9c-jab" eventType="touchUpInside" id="xQP-aV-Lf6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -528,6 +533,7 @@ law</string>
                                     <segment title="Partially True"/>
                                     <segment title="Completely Untrue"/>
                                 </segments>
+                                <color key="tintColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W2Q-aa-rpP">
                                 <rect key="frame" x="36" y="382" width="311" height="30"/>
@@ -558,20 +564,12 @@ law</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rv-ao-RA7">
-                                <rect key="frame" x="16" y="617" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rv-ao-RA7">
+                                <rect key="frame" x="15" y="608" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" image="left"/>
                                 <connections>
                                     <segue destination="BHd-9c-jab" kind="show" id="j76-0M-EuD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCh-Gq-Lzg">
-                                <rect key="frame" x="164" y="570" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter"/>
-                                <connections>
-                                    <action selector="enterPressedF:" destination="K0h-dA-atj" eventType="touchUpInside" id="qRe-IK-Qrc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tu6-jg-n3H">
@@ -581,6 +579,14 @@ law</string>
                                 <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCh-Gq-Lzg">
+                                <rect key="frame" x="161" y="513" width="60" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="down"/>
+                                <connections>
+                                    <action selector="enterPressedF:" destination="K0h-dA-atj" eventType="touchUpInside" id="qRe-IK-Qrc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -591,7 +597,7 @@ law</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0B-Be-SyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4412" y="124"/>
+            <point key="canvasLocation" x="4412" y="123.68815592203899"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vtB-vF-66Z">
@@ -613,6 +619,7 @@ law</string>
                                     <segment title="Partially True"/>
                                     <segment title="Completely Untrue"/>
                                 </segments>
+                                <color key="tintColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lN3-7a-JGR">
                                 <rect key="frame" x="36" y="382" width="311" height="30"/>
@@ -645,20 +652,12 @@ law</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE2-Kk-f3r">
-                                <rect key="frame" x="16" y="617" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE2-Kk-f3r">
+                                <rect key="frame" x="-5" y="608" width="88" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" image="left"/>
                                 <connections>
                                     <segue destination="K0h-dA-atj" kind="show" id="Gf2-fQ-aRY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcW-Vj-KU6">
-                                <rect key="frame" x="164" y="563" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter"/>
-                                <connections>
-                                    <action selector="enterPressedG:" destination="Xlp-f7-MTi" eventType="touchUpInside" id="dpL-Kv-hYw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAK-o8-v2w">
@@ -668,6 +667,14 @@ law</string>
                                 <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcW-Vj-KU6">
+                                <rect key="frame" x="161" y="521" width="60" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="down"/>
+                                <connections>
+                                    <action selector="enterPressedG:" destination="Xlp-f7-MTi" eventType="touchUpInside" id="dpL-Kv-hYw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -678,11 +685,13 @@ law</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zC7-lk-Aya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5167" y="124"/>
+            <point key="canvasLocation" x="5165.6000000000004" y="123.68815592203899"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow" width="48" height="48"/>
+        <image name="down" width="700" height="587"/>
+        <image name="left" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="j76-0M-EuD"/>

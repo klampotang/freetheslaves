@@ -32,6 +32,7 @@ class AViewController: UIViewController {
             question += 1
             questionA.text = questionsA[question]
             
+            
         }
         else {
             performSegue(withIdentifier: "AtoB", sender: nil)
