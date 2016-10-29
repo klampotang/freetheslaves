@@ -142,6 +142,9 @@ any more. </string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                     </view>
+                    <connections>
+                        <outlet property="questionA" destination="WAp-Z5-56h" id="jOP-7y-U7g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ag5-L1-uRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,6 +232,9 @@ slavery?)</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="questionB" destination="3bU-zY-F8O" id="4tu-2u-VJX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwI-Eu-MYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -313,6 +319,9 @@ movement? freedom to join groups and assemble? right to education?)</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="questionC" destination="uXK-cU-I06" id="tni-W6-ble"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8m4-Rd-pa3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -399,6 +408,9 @@ many families have income generating projects?)</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="questionD" destination="U6A-VA-e3B" id="laX-dc-bvw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBK-5g-7EF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -482,6 +494,9 @@ law</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="questionE" destination="iEu-l6-QsB" id="hMW-cX-Oly"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1d-8o-XXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -563,6 +578,9 @@ law</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="questionF" destination="mtQ-cM-B9E" id="q8L-g5-jJC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0B-Be-SyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -641,6 +659,9 @@ law</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="questionG" destination="CqX-UU-CcK" id="rqs-BK-iCu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zC7-lk-Aya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,6 +10,7 @@ import UIKit
 
 class GViewController: UIViewController {
 
+    @IBOutlet weak var questionG: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AViewController.dismissKeyboard))
