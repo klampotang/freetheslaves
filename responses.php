@@ -61,9 +61,11 @@
     //} else {
     //	$respmessage = $user_name . ' ' ."WHO EVEN ARE YOU";
     //}
+
     if($counter === 1) {
     	$respmessage = "Please choose your language. Enter 1- English; 2- Hindi; 3- French ";
-    } elseif ($counter === 2) {
+    } 
+    if ($counter === 2) {
     	//check for language input
     	if($last_message === "1") {
     		$language = 1;
