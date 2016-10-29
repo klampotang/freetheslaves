@@ -1,15 +1,15 @@
 //
-//  FreeTheSlavesTests.swift
-//  FreeTheSlavesTests
+//  FreeTheSlaves2Tests.swift
+//  FreeTheSlaves2Tests
 //
-//  Created by Kelly Lampotang on 10/28/16.
-//  Copyright © 2016 soyJPMorganAndChase. All rights reserved.
+//  Created by Janson Lau on 10/28/16.
+//  Copyright © 2016 Janson LauJanson Lau. All rights reserved.
 //
 
 import XCTest
-@testable import FreeTheSlaves
+@testable import FreeTheSlaves2
 
-class FreeTheSlavesTests: XCTestCase {
+class FreeTheSlaves2Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -28,7 +28,7 @@ class FreeTheSlavesTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }
