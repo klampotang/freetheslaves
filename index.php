@@ -57,19 +57,5 @@
         foreach ($client->messages->read() as $message) {
            echo $message->body;
         }
-
-    // if the sender is known, then greet them by name
-    // otherwise, consider them just another monkey
-    if(!$name = $people[$_REQUEST['From']]) {
-        $name = "Monkey";
-    }
-
-    // now greet the sender
-    header("content-type: text/xml");
-    echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-?>
-<Response>
-    <Message><?php echo $name ?>, WOW WOW WOW thanks for the message!</Message>
-</Response>
     }
 
