@@ -9,7 +9,8 @@
 import UIKit
 
 class BViewController: UIViewController {
-
+    var question = 0
+    let questionsB = ["Residents in this village know how to protect themselves from trafficking during  migration for work","Residents understand the risks of sending children to distant jobs, e.g. domestic work, mining or stone quarries, and circuses.","Residents are able to identify and pressure known traffickers to leave when they appear in the community.","Residents in this village know how to avoid debt bondage.","Residents understand the risks of early or forced marriage and false offers of marriage.", "Residents are able to confront domestic violence.", "Residents know how to file criminal complaints with the police."]
     @IBOutlet weak var questionB: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,13 @@ class BViewController: UIViewController {
     }
 
     @IBAction func enterPressedB(_ sender: Any) {
+        if(question < questionsB.count-1) {
+            question += 1
+            questionB.text = questionsB[question]
+        }
+        else {
+            performSegue(withIdentifier: "AtoB", sender: nil)
+        }
     }
     
 

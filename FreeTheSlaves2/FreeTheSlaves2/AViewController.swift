@@ -26,7 +26,7 @@ class AViewController: UIViewController {
         view.endEditing(true)
     }
     @IBAction func enterPressed(_ sender: Any) {
-        if(question < questionsA.count) {
+        if(question < questionsA.count-1) {
             question += 1
             questionA.text = questionsA[question]
         }
