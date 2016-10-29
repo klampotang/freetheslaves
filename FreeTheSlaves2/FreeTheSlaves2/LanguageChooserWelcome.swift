@@ -39,7 +39,10 @@ class LanguageChooserWelcome: UIViewController, UIPickerViewDataSource, UIPicker
         // Dispose of any resources that can be recreated.
     }
         
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let avc = segue.destination as! AViewController
+        avc.languageChosen = languageChooser.selectedRow(inComponent: avc.languageChosen)
+    }
     /*
     // MARK: - Navigation
 
