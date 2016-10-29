@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183726EA1DC4323800A3AC45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183726E91DC4323800A3AC45 /* AppDelegate.swift */; };
+		183726EF1DC4323800A3AC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183726ED1DC4323800A3AC45 /* Main.storyboard */; };
+		183726F11DC4323800A3AC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183726F01DC4323800A3AC45 /* Assets.xcassets */; };
+		183726F41DC4323800A3AC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183726F21DC4323800A3AC45 /* LaunchScreen.storyboard */; };
+		183726FF1DC4323800A3AC45 /* FreeTheSlaves2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183726FE1DC4323800A3AC45 /* FreeTheSlaves2Tests.swift */; };
+		1837270A1DC4399000A3AC45 /* LanguageChooserWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183727091DC4399000A3AC45 /* LanguageChooserWelcome.swift */; };
+		1837270C1DC4399E00A3AC45 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837270B1DC4399E00A3AC45 /* AViewController.swift */; };
+		1837270E1DC439AC00A3AC45 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837270D1DC439AC00A3AC45 /* BViewController.swift */; };
+		183727101DC439B400A3AC45 /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837270F1DC439B400A3AC45 /* CViewController.swift */; };
+		183727121DC439BB00A3AC45 /* DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183727111DC439BB00A3AC45 /* DViewController.swift */; };
+		183727141DC439C300A3AC45 /* EViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183727131DC439C300A3AC45 /* EViewController.swift */; };
+		183727161DC439CA00A3AC45 /* FViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183727151DC439CA00A3AC45 /* FViewController.swift */; };
+		183727181DC439D000A3AC45 /* GViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183727171DC439D000A3AC45 /* GViewController.swift */; };
+		1837271A1DC4549900A3AC45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183727191DC4549900A3AC45 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		183726FB1DC4323800A3AC45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 183726DE1DC4323800A3AC45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 183726E51DC4323800A3AC45;
+			remoteInfo = FreeTheSlaves2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		183726E61DC4323800A3AC45 /* FreeTheSlaves2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeTheSlaves2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		183726E91DC4323800A3AC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		183726EE1DC4323800A3AC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		183726F01DC4323800A3AC45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		183726F31DC4323800A3AC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		183726F51DC4323800A3AC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183726FA1DC4323800A3AC45 /* FreeTheSlaves2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeTheSlaves2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		183726FE1DC4323800A3AC45 /* FreeTheSlaves2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeTheSlaves2Tests.swift; sourceTree = "<group>"; };
+		183727001DC4323800A3AC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183727091DC4399000A3AC45 /* LanguageChooserWelcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageChooserWelcome.swift; sourceTree = "<group>"; };
+		1837270B1DC4399E00A3AC45 /* AViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
+		1837270D1DC439AC00A3AC45 /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
+		1837270F1DC439B400A3AC45 /* CViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CViewController.swift; sourceTree = "<group>"; };
+		183727111DC439BB00A3AC45 /* DViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DViewController.swift; sourceTree = "<group>"; };
+		183727131DC439C300A3AC45 /* EViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EViewController.swift; sourceTree = "<group>"; };
+		183727151DC439CA00A3AC45 /* FViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FViewController.swift; sourceTree = "<group>"; };
+		183727171DC439D000A3AC45 /* GViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GViewController.swift; sourceTree = "<group>"; };
+		183727191DC4549900A3AC45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		183726E31DC4323800A3AC45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183726F71DC4323800A3AC45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		183726DD1DC4323800A3AC45 = {
+			isa = PBXGroup;
+			children = (
+				183726E81DC4323800A3AC45 /* FreeTheSlaves2 */,
+				183726FD1DC4323800A3AC45 /* FreeTheSlaves2Tests */,
+				183726E71DC4323800A3AC45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		183726E71DC4323800A3AC45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				183726E61DC4323800A3AC45 /* FreeTheSlaves2.app */,
+				183726FA1DC4323800A3AC45 /* FreeTheSlaves2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		183726E81DC4323800A3AC45 /* FreeTheSlaves2 */ = {
+			isa = PBXGroup;
+			children = (
+				183726E91DC4323800A3AC45 /* AppDelegate.swift */,
+				183726ED1DC4323800A3AC45 /* Main.storyboard */,
+				183726F01DC4323800A3AC45 /* Assets.xcassets */,
+				183726F21DC4323800A3AC45 /* LaunchScreen.storyboard */,
+				183726F51DC4323800A3AC45 /* Info.plist */,
+				183727091DC4399000A3AC45 /* LanguageChooserWelcome.swift */,
+				1837270B1DC4399E00A3AC45 /* AViewController.swift */,
+				1837270D1DC439AC00A3AC45 /* BViewController.swift */,
+				1837270F1DC439B400A3AC45 /* CViewController.swift */,
+				183727111DC439BB00A3AC45 /* DViewController.swift */,
+				183727131DC439C300A3AC45 /* EViewController.swift */,
+				183727151DC439CA00A3AC45 /* FViewController.swift */,
+				183727171DC439D000A3AC45 /* GViewController.swift */,
+				183727191DC4549900A3AC45 /* GoogleService-Info.plist */,
+			);
+			path = FreeTheSlaves2;
+			sourceTree = "<group>";
+		};
+		183726FD1DC4323800A3AC45 /* FreeTheSlaves2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				183726FE1DC4323800A3AC45 /* FreeTheSlaves2Tests.swift */,
+				183727001DC4323800A3AC45 /* Info.plist */,
+			);
+			path = FreeTheSlaves2Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		183726E51DC4323800A3AC45 /* FreeTheSlaves2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183727031DC4323800A3AC45 /* Build configuration list for PBXNativeTarget "FreeTheSlaves2" */;
+			buildPhases = (
+				183726E21DC4323800A3AC45 /* Sources */,
+				183726E31DC4323800A3AC45 /* Frameworks */,
+				183726E41DC4323800A3AC45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreeTheSlaves2;
+			productName = FreeTheSlaves2;
+			productReference = 183726E61DC4323800A3AC45 /* FreeTheSlaves2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		183726F91DC4323800A3AC45 /* FreeTheSlaves2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183727061DC4323800A3AC45 /* Build configuration list for PBXNativeTarget "FreeTheSlaves2Tests" */;
+			buildPhases = (
+				183726F61DC4323800A3AC45 /* Sources */,
+				183726F71DC4323800A3AC45 /* Frameworks */,
+				183726F81DC4323800A3AC45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				183726FC1DC4323800A3AC45 /* PBXTargetDependency */,
+			);
+			name = FreeTheSlaves2Tests;
+			productName = FreeTheSlaves2Tests;
+			productReference = 183726FA1DC4323800A3AC45 /* FreeTheSlaves2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		183726DE1DC4323800A3AC45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Janson LauJanson Lau";
+				TargetAttributes = {
+					183726E51DC4323800A3AC45 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = F4P428X9U6;
+						ProvisioningStyle = Automatic;
+					};
+					183726F91DC4323800A3AC45 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 183726E51DC4323800A3AC45;
+					};
+				};
+			};
+			buildConfigurationList = 183726E11DC4323800A3AC45 /* Build configuration list for PBXProject "FreeTheSlaves2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 183726DD1DC4323800A3AC45;
+			productRefGroup = 183726E71DC4323800A3AC45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				183726E51DC4323800A3AC45 /* FreeTheSlaves2 */,
+				183726F91DC4323800A3AC45 /* FreeTheSlaves2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		183726E41DC4323800A3AC45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183726F41DC4323800A3AC45 /* LaunchScreen.storyboard in Resources */,
+				1837271A1DC4549900A3AC45 /* GoogleService-Info.plist in Resources */,
+				183726F11DC4323800A3AC45 /* Assets.xcassets in Resources */,
+				183726EF1DC4323800A3AC45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183726F81DC4323800A3AC45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		183726E21DC4323800A3AC45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1837270A1DC4399000A3AC45 /* LanguageChooserWelcome.swift in Sources */,
+				183727181DC439D000A3AC45 /* GViewController.swift in Sources */,
+				183727121DC439BB00A3AC45 /* DViewController.swift in Sources */,
+				1837270E1DC439AC00A3AC45 /* BViewController.swift in Sources */,
+				183727101DC439B400A3AC45 /* CViewController.swift in Sources */,
+				1837270C1DC4399E00A3AC45 /* AViewController.swift in Sources */,
+				183727161DC439CA00A3AC45 /* FViewController.swift in Sources */,
+				183726EA1DC4323800A3AC45 /* AppDelegate.swift in Sources */,
+				183727141DC439C300A3AC45 /* EViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183726F61DC4323800A3AC45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183726FF1DC4323800A3AC45 /* FreeTheSlaves2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		183726FC1DC4323800A3AC45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 183726E51DC4323800A3AC45 /* FreeTheSlaves2 */;
+			targetProxy = 183726FB1DC4323800A3AC45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		183726ED1DC4323800A3AC45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183726EE1DC4323800A3AC45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		183726F21DC4323800A3AC45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183726F31DC4323800A3AC45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		183727011DC4323800A3AC45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		183727021DC4323800A3AC45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		183727041DC4323800A3AC45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F4P428X9U6;
+				INFOPLIST_FILE = FreeTheSlaves2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jansonlau.FreeTheSlaves2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		183727051DC4323800A3AC45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F4P428X9U6;
+				INFOPLIST_FILE = FreeTheSlaves2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jansonlau.FreeTheSlaves2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		183727071DC4323800A3AC45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FreeTheSlaves2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jansonlau.FreeTheSlaves2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeTheSlaves2.app/FreeTheSlaves2";
+			};
+			name = Debug;
+		};
+		183727081DC4323800A3AC45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FreeTheSlaves2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jansonlau.FreeTheSlaves2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeTheSlaves2.app/FreeTheSlaves2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		183726E11DC4323800A3AC45 /* Build configuration list for PBXProject "FreeTheSlaves2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183727011DC4323800A3AC45 /* Debug */,
+				183727021DC4323800A3AC45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183727031DC4323800A3AC45 /* Build configuration list for PBXNativeTarget "FreeTheSlaves2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183727041DC4323800A3AC45 /* Debug */,
+				183727051DC4323800A3AC45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		183727061DC4323800A3AC45 /* Build configuration list for PBXNativeTarget "FreeTheSlaves2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183727071DC4323800A3AC45 /* Debug */,
+				183727081DC4323800A3AC45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 183726DE1DC4323800A3AC45 /* Project object */;
+}
