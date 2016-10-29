@@ -145,6 +145,7 @@ any more. </string>
                         <gestureRecognizers/>
                     </view>
                     <connections>
+                        <outlet property="commentsField" destination="2xZ-oF-l1A" id="eU9-Ad-S7C"/>
                         <outlet property="questionA" destination="WAp-Z5-56h" id="jOP-7y-U7g"/>
                         <outlet property="segControlA" destination="20A-dI-N9A" id="ePg-II-ZtF"/>
                     </connections>
@@ -237,6 +238,7 @@ slavery?)</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="commentsField" destination="k7p-Jx-D14" id="xHq-rD-e7w"/>
                         <outlet property="questionB" destination="3bU-zY-F8O" id="4tu-2u-VJX"/>
                         <outlet property="segControlB" destination="sh4-hs-2c1" id="tUb-hA-ydc"/>
                     </connections>
@@ -326,6 +328,7 @@ movement? freedom to join groups and assemble? right to education?)</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="commentsField" destination="uKL-sr-4tw" id="9Fz-W3-zxY"/>
                         <outlet property="questionC" destination="uXK-cU-I06" id="tni-W6-ble"/>
                         <outlet property="segControlC" destination="MiN-sB-8Yd" id="Mt4-YD-g5k"/>
                     </connections>
@@ -417,6 +420,7 @@ many families have income generating projects?)</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="commentsField" destination="S4h-fC-c8y" id="XWD-oB-ZGq"/>
                         <outlet property="questionD" destination="U6A-VA-e3B" id="laX-dc-bvw"/>
                         <outlet property="segControlD" destination="ytK-rw-PJ4" id="A3P-GC-Ck6"/>
                     </connections>
@@ -505,6 +509,7 @@ law</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="commentsField" destination="30j-eA-16n" id="U7f-Bh-fj7"/>
                         <outlet property="questionE" destination="iEu-l6-QsB" id="hMW-cX-Oly"/>
                         <outlet property="segControlE" destination="t2q-aT-dxy" id="c4P-hd-vkl"/>
                     </connections>
@@ -591,6 +596,7 @@ law</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="commentsField" destination="W2Q-aa-rpP" id="UKf-w1-iJR"/>
                         <outlet property="questionF" destination="mtQ-cM-B9E" id="q8L-g5-jJC"/>
                         <outlet property="segControlF" destination="Qs4-HM-rEK" id="H1W-up-YDC"/>
                     </connections>
@@ -679,6 +685,7 @@ law</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="commentsField" destination="lN3-7a-JGR" id="9ca-mk-qXi"/>
                         <outlet property="questionG" destination="CqX-UU-CcK" id="rqs-BK-iCu"/>
                         <outlet property="segControlG" destination="esf-Yy-lEF" id="4gd-av-K3d"/>
                     </connections>
