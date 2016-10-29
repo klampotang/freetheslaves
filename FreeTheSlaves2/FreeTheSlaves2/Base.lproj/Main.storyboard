@@ -72,6 +72,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIL-Fc-wFe">
+                                <rect key="frame" x="-14" y="20" width="102" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAp-Z5-56h">
                                 <rect key="frame" x="16" y="130" width="343" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -129,13 +136,10 @@ any more. </string>
                                     <segue destination="BYZ-38-t0r" kind="show" id="MGN-2V-5hu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIL-Fc-wFe">
-                                <rect key="frame" x="-14" y="20" width="102" height="66"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FTSLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5Fd-1W-jVp">
+                                <rect key="frame" x="325" y="28" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
-                                <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -162,6 +166,13 @@ any more. </string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKY-1V-UAR">
+                                <rect key="frame" x="-23" y="8" width="102" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sh4-hs-2c1">
                                 <rect key="frame" x="0.0" y="281" width="375" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -219,13 +230,10 @@ migration for work.</string>
                                     <action selector="enterPressedB:" destination="q8Z-4R-QMh" eventType="touchUpInside" id="LNH-jO-dF2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKY-1V-UAR">
-                                <rect key="frame" x="-23" y="8" width="102" height="66"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FTSLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8F7-Q6-xWw">
+                                <rect key="frame" x="325" y="20" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
-                                <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -316,6 +324,10 @@ movement? freedom to join groups and assemble? right to education?)</string>
                                 <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FTSLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NnR-6H-wot">
+                                <rect key="frame" x="325" y="25" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -408,6 +420,10 @@ many families have income generating projects?)</string>
                                 <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FTSLogo" translatesAutoresizingMaskIntoConstraints="NO" id="UVi-YE-y5i">
+                                <rect key="frame" x="325" y="23" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -497,6 +513,10 @@ law</string>
                                 <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FTSLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4P3-h2-eFS">
+                                <rect key="frame" x="325" y="28" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -584,6 +604,10 @@ law</string>
                                 <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FTSLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cgf-Mf-gPC">
+                                <rect key="frame" x="325" y="25" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -673,6 +697,10 @@ law</string>
                                 <color key="textColor" red="0.55153795809999995" green="0.14840789500000001" blue="0.1852751896" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FTSLogo" translatesAutoresizingMaskIntoConstraints="NO" id="SZq-6L-9ht">
+                                <rect key="frame" x="325" y="28" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -688,6 +716,7 @@ law</string>
         </scene>
     </scenes>
     <resources>
+        <image name="FTSLogo" width="300" height="300"/>
         <image name="arrow" width="48" height="48"/>
         <image name="down" width="700" height="587"/>
         <image name="language" width="687" height="566"/>
@@ -696,9 +725,9 @@ law</string>
     <inferredMetricsTieBreakers>
         <segue reference="j76-0M-EuD"/>
         <segue reference="Gf2-fQ-aRY"/>
-        <segue reference="GzP-xz-VAL"/>
-        <segue reference="zBk-h0-zPR"/>
+        <segue reference="kcz-38-jFE"/>
         <segue reference="efT-Sr-bTB"/>
+        <segue reference="zBk-h0-zPR"/>
         <segue reference="flY-jD-yLr"/>
     </inferredMetricsTieBreakers>
 </document>
