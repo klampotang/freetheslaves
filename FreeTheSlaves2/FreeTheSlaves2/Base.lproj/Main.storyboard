@@ -21,15 +21,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Free The Slaves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uug-dt-6JY">
-                                <rect key="frame" x="50" y="0.0" width="274" height="167"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="F r e e  T h e  S l a v e s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uug-dt-6JY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E6p-tJ-Rcp">
-                                <rect key="frame" x="0.0" y="167" width="375" height="16"/>
+                                <rect key="frame" x="0.0" y="167" width="375" height="5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -199,11 +198,7 @@ any more. </string>
                                 <rect key="frame" x="20" y="92" width="343" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Residents in this village know how to protect themselves from trafficking during
-migration for work.
-(facilitator questions: In cases where a household member is migrating for work,
-are they: 1) counseled about the risks? 2) told about the measures to take to
-protect themselves? and 3) told whom to contact if they find themselves in
-slavery?)</string>
+migration for work.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -701,9 +696,9 @@ law</string>
     <inferredMetricsTieBreakers>
         <segue reference="j76-0M-EuD"/>
         <segue reference="Gf2-fQ-aRY"/>
-        <segue reference="0OF-0T-lug"/>
-        <segue reference="WYp-5c-tWt"/>
+        <segue reference="GzP-xz-VAL"/>
+        <segue reference="zBk-h0-zPR"/>
         <segue reference="efT-Sr-bTB"/>
-        <segue reference="XFu-cW-7Pn"/>
+        <segue reference="flY-jD-yLr"/>
     </inferredMetricsTieBreakers>
 </document>
