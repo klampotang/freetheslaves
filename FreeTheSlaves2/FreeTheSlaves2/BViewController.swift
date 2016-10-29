@@ -34,7 +34,7 @@ class BViewController: UIViewController {
             questionB.text = questionsB[question]
         }
         else {
-            performSegue(withIdentifier: "AtoB", sender: nil)
+            performSegue(withIdentifier: "BtoC", sender: nil)
         }
     }
     
