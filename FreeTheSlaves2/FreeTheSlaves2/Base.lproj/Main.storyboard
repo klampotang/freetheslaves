@@ -150,9 +150,9 @@ any more. </string>
                                 <rect key="frame" x="0.0" y="281" width="375" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Completely True"/>
-                                    <segment title="Partially True"/>
-                                    <segment title="Completely Untrue"/>
+                                    <segment title="All Residents"/>
+                                    <segment title="Some Residents"/>
+                                    <segment title="No Residents"/>
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7p-Jx-D14">
@@ -221,9 +221,9 @@ slavery?)</string>
                                 <rect key="frame" x="0.0" y="282" width="375" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Completely True"/>
-                                    <segment title="Partially True"/>
-                                    <segment title="Completely Untrue"/>
+                                    <segment title="All Residents"/>
+                                    <segment title="Some Residents"/>
+                                    <segment title="No Residents"/>
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uKL-sr-4tw">
@@ -289,9 +289,9 @@ movement? freedom to join groups and assemble? right to education?)</string>
                                 <rect key="frame" x="0.0" y="282" width="375" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Completely True"/>
-                                    <segment title="Partially True"/>
-                                    <segment title="Completely Untrue"/>
+                                    <segment title="All Residents"/>
+                                    <segment title="Some Residents"/>
+                                    <segment title="No Residents"/>
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S4h-fC-c8y">
@@ -359,9 +359,9 @@ many families have income generating projects?)</string>
                                 <rect key="frame" x="0.0" y="282" width="375" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Completely True"/>
-                                    <segment title="Partially True"/>
-                                    <segment title="Completely Untrue"/>
+                                    <segment title="All Survivors"/>
+                                    <segment title="Some Survivors"/>
+                                    <segment title="No Survivors"/>
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="30j-eA-16n">
