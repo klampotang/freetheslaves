@@ -27,7 +27,9 @@
     // Step 4: make an array of people we know, to send them a message. 
     // Feel free to change/add your own phone number and name here.
     $people = array(
-        "+17708203636" => "Ashley!"
+        "+17708203636" => "Ashley!",
+        "+19178412850" => "Volunteer",
+        "+13528712319" => "Kelly"
     );
 
     // Step 5: Loop over all our friends. $number is a phone number above, and 
@@ -53,9 +55,25 @@
         echo $sms->sid;
         echo "Sent message to $name";
 
+        $servername = "172.31.11.220";
+        $username = "app";
+        $password = "password";
+
+        // // Create connection
+        // $conn = new mysqli($servername, $username, $password);
+        // echo "Database here";
+
+        // // Check connection
+        // if ($conn->connect_error) {
+        //     echo "Connection failed";
+        //     die("Connection failed: " . $conn->connect_error);
+
+        // } 
+        // echo "Connected successfully";
+
         //this lists all the messages sent and responded
         foreach ($client->messages->read() as $message) {
-           echo $message->body .'  '; 
+           echo $message->body .' '; 
         }
     }
 

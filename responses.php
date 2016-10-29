@@ -7,18 +7,26 @@
 
     // start the session
     session_start();
+    //session_unset();//free session variables !!remove later
 
     // get the session varible if it exists
-    $counter = $_SESSION['counter'];
+    //$counter = $_SESSION['counter'];
 
     // if it doesnt, set the default
-    if(!strlen($counter)) {
-        $counter = 0;
-    }
+    //if(!strlen($counter)) {
+    //    $counter = 0;
+    //}
+    if (!isset($_SESSION['counter'])) {
+    	$_SESSION['counter'] = 0;
+    	
+	}
+	$counter = $_SESSION['counter'];
+
+	//$language = $_SESSION['language'];
 
     // get the language varible if it exists
     if (!isset($_SESSION['language'])) {
-    	$_SESSION['language'] = 1;
+    	$_SESSION['language'] = 0;
     	
 	}
 	$language = $_SESSION['language'];
@@ -61,6 +69,12 @@
     //} else {
     //	$respmessage = $user_name . ' ' ."WHO EVEN ARE YOU";
     //}
+    if($language == "0") {
+    	$respmessage = "Please choose your language. Enter 1- English; 2- Hindi हिंदी; 3- French français ";
+    	$counter == 1;
+    }
+
+
     if($counter == 1) {
     	$respmessage = "Please choose your language. Enter 1- English; 2- Hindi हिंदी; 3- French français ";
     } elseif ($counter == 2) {
