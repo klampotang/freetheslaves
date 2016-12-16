@@ -1,6 +1,6 @@
 # FreeTheSlaves
 
-[MIT License] (https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
+[MIT License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
 
 
 **FreeTheSlaves** was our team's project at Code For Good, Brooklyn. Code For Good is a weekend-long hackathon in which participants partner with a non-profit to help them achieve their goals through technology - such as apps and interfaces. 
